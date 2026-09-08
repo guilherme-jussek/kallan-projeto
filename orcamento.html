@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orçamento — Kallan Calçados.">
+    <title>Orçamento | Kallan</title>
+</head>
+
+<body>
+
+    <header>
+        <p><a href="index.html">Kallan Calçados</a></p>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="paginas/feminino.html">Feminino</a></li>
+                <li><a href="paginas/masculino.html">Masculino</a></li>
+                <li><a href="paginas/infantil.html">Infantil</a></li>
+                <li><a href="paginas/tenis-esportivo.html">Tênis esportivo</a></li>
+                <li><a href="paginas/acessorios.html">Acessórios</a></li>
+                <li><a href="paginas/marcas.html">Marcas</a></li>
+                <li><a href="paginas/lojas.html">Lojas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="orcamento.html">Orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Solicitação de orçamento</h1>
+            <p>
+                Preencha os dados para solicitar informações sobre
+                um produto, categoria ou atendimento.
+            </p>
+        </section>
+
+        <section>
+            <h2>Solicite informações</h2>
+
+            <article>
+                <h3>Formulário de orçamento</h3>
+
+                <form
+                    name="orcamento"
+                    method="post"
+                    data-netlify="true"
+                    action="/index.html"
+                >
+
+                    <input type="hidden" name="form-name" value="orcamento">
+
+                    <p>
+                        <label for="nome">Nome completo:</label><br>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            autocomplete="name"
+                            minlength="3"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label><br>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone:</label><br>
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            inputmode="numeric"
+                            autocomplete="tel"
+                            placeholder="11999999999"
+                            pattern="[0-9]{10,11}"
+                            title="Digite 10 ou 11 números, sem espaços, parênteses ou hífen."
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="categoria">Categoria de interesse:</label><br>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Selecione</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="infantil">Infantil</option>
+                            <option value="tenis-esportivo">Tênis esportivo</option>
+                            <option value="acessorios">Acessórios</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="descricao">Descreva o que você procura:</label><br>
+                        <textarea
+                            id="descricao"
+                            name="descricao"
+                            rows="6"
+                            minlength="10"
+                            required
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Solicitar informações</button>
+                    </p>
+
+                </form>
+            </article>
+        </section>
+
+        <section>
+            <h2>Observação</h2>
+
+            <article>
+                <h3>Informações importantes</h3>
+                <p>
+                    Preços, disponibilidade e condições comerciais devem ser
+                    confirmados pelos canais oficiais da Kallan.
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+            <h2>Fale com a Kallan</h2>
+            <p>E-mail: sac@kallan.com.br</p>
+            <p>WhatsApp: (11) 91036-7002</p>
+            <p>
+                Atendimento: segunda a quinta, das 09h às 18h;
+                sexta, das 08h às 17h, exceto feriados.
+            </p>
+        </section>
+
+        <p>&copy; 2026 Kallan Calçados. Projeto acadêmico.</p>
+    </footer>
+
+</body>
+</html>
