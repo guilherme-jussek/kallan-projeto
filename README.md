@@ -22,8 +22,6 @@ O contato com a organização foi realizado presencialmente pelo integrante Sand
 
 Como complemento à comprovação do contato presencial com a unidade Kallan K44, foram adicionadas à pasta docs/ três fotos relacionadas à unidade, mostrando o interior da loja e a identificação da marca.
 
-![Comprovação do contato presencial com a organização](docs/entrevista.jpg)
-
 ### Processo de desenvolvimento
 
 O projeto foi estruturado utilizando HTML5 semântico. A estrutura principal é composta por uma página inicial, páginas de contato e orçamento e sete páginas de conteúdo.
