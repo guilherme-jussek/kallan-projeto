@@ -1,45 +1,67 @@
-# Projeto Kallan — Desenvolvimento Front-End para Web
+Projeto Kallan — Desenvolvimento Front-End para Web
 
-## Integrantes
-- Nome 1 — RGM:
-- Nome 2 — RGM:
-- Nome 3 — RGM:
-- Nome 4 — RGM:
+Integrantes
 
-## Introdução
-Projeto acadêmico desenvolvido para a disciplina de Desenvolvimento Front-End para Web, utilizando a Kallan Calçados como organização real de referência. O objetivo é construir uma experiência web estruturada em HTML5, com navegação entre páginas, organização semântica, formulário, recursos multimídia e preparação para estilização na Entrega 2.
+Guilherme Jussek Nogueira — RGM: 47392657
 
-A Kallan informa em seu site oficial que atua desde 1979 e possui mais de 40 lojas no estado de São Paulo, além de unidades em Salvador e Aracaju. A empresa também apresenta categorias como feminino, masculino, infantil, tênis esportivo e acessórios. Os dados institucionais definitivos usados no projeto deverão ser confirmados durante o contato com a empresa. 
+Henry Soave Bailer — RGM: 46977244
 
-## Desenvolvimento
+Matheus Augusto Assunção Novaes — RGM: 47714638
 
-### Contato com a organização real
-O grupo realizou/realizará contato com um representante da Kallan por [presencial / Google Meet / Zoom]. O contato foi realizado por meio do integrante do grupo que trabalha na empresa.
+Nicolas Gabriel Parris Reis — RGM: 47646691
 
-**Data do contato:** [preencher]
+Sander Lima Alves — RGM: 47673621
 
-**Entrevistado:** [nome e cargo — preencher]
+Introdução
 
-**Principais informações levantadas:** [preencher após a entrevista]
+Projeto acadêmico desenvolvido para a disciplina de Desenvolvimento Front-End para Web, utilizando a Kallan Calçados como organização real de referência.
 
-### Comprovação do contato
-Adicionar nesta pasta a foto/print autorizado e manter o nome do arquivo como `entrevista.jpg`.
+O objetivo do projeto é desenvolver uma experiência web estruturada em HTML5, com navegação entre as páginas, organização semântica, formulários, recursos multimídia e estrutura preparada para a evolução visual na Entrega 2.
 
-![Comprovação do contato com a organização](docs/entrevista.jpg)
+Contato com a organização real
 
-### Processo de desenvolvimento
-O projeto foi estruturado com HTML5 semântico, utilizando elementos como `header`, `nav`, `main`, `section`, `article` e `footer`. As páginas foram divididas em uma página inicial, páginas obrigatórias de contato e orçamento e sete páginas de conteúdo.
+O contato com a organização foi realizado presencialmente pelo integrante Sander Lima Alves, que trabalha na unidade Kallan K44. Durante o contato, foi obtida autorização da gestão para a utilização do nome e do logotipo da unidade para fins acadêmicos, relacionados ao desenvolvimento deste projeto.
 
-Nesta primeira entrega, o foco é a estrutura e a organização do conteúdo, sem definição de identidade visual por CSS. A estrutura foi pensada para receber a estilização e os componentes visuais na Entrega 2.
+Comprovação do contato
 
-Também foram incorporados formulário com validação nativa do HTML5, recursos de áudio e vídeo e navegação consistente entre as páginas.
+Como comprovação do contato presencial, foi adicionada à pasta docs/ uma foto do integrante Sander em frente à unidade Kallan K44.
 
-### Estrutura do projeto
-```text
+
+
+Processo de desenvolvimento
+
+O projeto foi estruturado utilizando HTML5 semântico. A estrutura principal é composta por uma página inicial, páginas de contato e orçamento e sete páginas de conteúdo.
+
+A maior parte do desenvolvimento foi realizada em um único computador na faculdade, utilizando o Visual Studio Code. Durante o processo, o grupo trabalhou em conjunto, discutindo as ideias, dividindo tarefas e realizando alterações e testes no projeto.
+
+Cada integrante contribuiu em diferentes etapas, pensando em ideias, conteúdo, testes, revisão e outras atividades necessárias.
+
+Também utilizamos o Git e o GitHub para organizar as versões do projeto e acompanhar as alterações realizadas durante o desenvolvimento.
+
+Foram implementados formulários com validação nativa do HTML5, recursos de áudio e vídeo e navegação consistente entre as páginas.
+
+Os formulários de contato e orçamento utilizam o Netlify Forms para o recebimento das informações enviadas pelos usuários.
+
+Desafios técnicos
+
+Durante o desenvolvimento, tivemos alguns desafios, principalmente para organizar a navegação entre as páginas e fazer os caminhos dos arquivos funcionarem corretamente entre a pasta principal e a pasta paginas.
+
+Também tivemos alguns ajustes nos formulários e na configuração dos recursos de áudio e vídeo. Depois disso, fizemos vários testes e correções para garantir que tudo continuasse funcionando corretamente no site publicado e que as páginas passassem pela validação do W3C.
+
+Uso de Inteligência Artificial
+
+A Inteligência Artificial foi utilizada como apoio durante o desenvolvimento do projeto, principalmente porque estamos começando a trabalhar com HTML e ainda tínhamos algumas dúvidas sobre a estrutura e o funcionamento de alguns elementos.
+
+Ela nos auxiliou a entender melhor os conceitos, identificar erros, esclarecer dúvidas e revisar alguns trechos do código. Também ajudou a melhorar a organização e a qualidade do código, sugerindo ajustes para deixá-lo mais limpo e funcionando corretamente. As decisões e alterações finais foram feitas pelo grupo durante o desenvolvimento e os testes do projeto.
+
+Estrutura do projeto
+
 kallan-projeto/
 ├── index.html
 ├── contato.html
 ├── orcamento.html
+├── obrigado.html
+├── README.md
 ├── paginas/
 │   ├── feminino.html
 │   ├── masculino.html
@@ -52,29 +74,29 @@ kallan-projeto/
 │   ├── img/
 │   ├── audio/
 │   └── video/
-├── docs/
-│   └── entrevista.jpg
-└── README.md
-```
+└── docs/
+    └── entrevista.jpg
 
-## Validação
-Todas as páginas devem ser verificadas no W3C Validator antes da entrega final.
+Validação
 
-- [ ] `index.html`
-- [ ] `contato.html`
-- [ ] `orcamento.html`
-- [ ] `paginas/feminino.html`
-- [ ] `paginas/masculino.html`
-- [ ] `paginas/infantil.html`
-- [ ] `paginas/tenis-esportivo.html`
-- [ ] `paginas/acessorios.html`
-- [ ] `paginas/marcas.html`
-- [ ] `paginas/lojas.html`
+As dez páginas previstas para a entrega foram verificadas utilizando o W3C Validator. Durante os testes, encontramos alguns erros, identificamos as causas e realizamos as correções necessárias. Após as correções, as páginas ficaram sem erros ou avisos pendentes.
 
-## Hospedagem
-**Link do site hospedado:** [adicionar após o deploy no Netlify ou serviço equivalente]
+A página auxiliar obrigado.html, utilizada para a confirmação do envio dos formulários, também foi validada e não apresentou erros ou avisos.
 
-**Repositório GitHub:** [adicionar link após publicar]
+Hospedagem
 
-## Conclusão
-A primeira etapa permitiu transformar as informações levantadas sobre a organização em uma estrutura web semântica, navegável e preparada para evolução visual. O grupo também desenvolveu práticas de organização de arquivos, validação de HTML, versionamento e publicação na web.
+Site hospedado no Netlify:
+
+https://kallan-projeto.netlify.app/
+
+Repositório GitHub:
+
+https://github.com/guilherme-jussek/kallan-projeto
+
+O projeto está conectado ao Netlify por meio do repositório GitHub, permitindo a atualização do site a partir das alterações publicadas no branch principal.
+
+Conclusão
+
+Nesta primeira etapa, conseguimos montar a estrutura do site e fazer as principais páginas funcionarem. Também trabalhamos com HTML5, formulários, áudio, vídeo, navegação entre as páginas e publicação do projeto.
+
+Durante o desenvolvimento, tivemos alguns ajustes pelo caminho, principalmente com os formulários, os caminhos dos arquivos e a publicação do site. Depois dos testes e das correções, conseguimos deixar o projeto funcionando e pronto para a próxima etapa.
