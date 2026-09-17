@@ -73,19 +73,21 @@ kallan-projeto/
 │   └── video/
 └── docs/
     └── entrevista.jpg
-Validação
+```
+
+## Validação
 
 As dez páginas previstas para a entrega foram verificadas utilizando o W3C Validator. Durante os testes, encontramos alguns erros, identificamos as causas e realizamos as correções necessárias. Após as correções, as páginas ficaram sem erros ou avisos pendentes.
 
-A página auxiliar obrigado.html, utilizada para a confirmação do envio dos formulários, também foi validada e não apresentou erros ou avisos.
+A página auxiliar `obrigado.html`, utilizada para a confirmação do envio dos formulários, também foi validada e não apresentou erros ou avisos.
 
-Hospedagem
+## Hospedagem
 
-Site hospedado no Netlify:
+**Site hospedado no Netlify:**
 
 https://kallan-projeto.netlify.app/
 
-Repositório GitHub:
+**Repositório GitHub:**
 
 https://github.com/guilherme-jussek/kallan-projeto
 
