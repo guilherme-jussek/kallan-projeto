@@ -22,7 +22,7 @@ O contato com a organização foi realizado presencialmente pelo integrante Sand
 
 Como complemento à comprovação do contato presencial com a unidade Kallan K44, foram adicionadas à pasta docs/ três fotos relacionadas à unidade, mostrando o interior da loja e a identificação da marca.
 
-Ver fotos da unidade Kallan K44
+[Ver fotos da unidade Kallan K44](./docs/)
 
 ### Processo de desenvolvimento
 
