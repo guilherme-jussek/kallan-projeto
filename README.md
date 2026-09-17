@@ -74,7 +74,7 @@ kallan-projeto/
 │   ├── img/
 │   ├── audio/
 │   └── video/
-└── docs/
+└── docs/s
     └── entrevista.jpg
 
 Validação
