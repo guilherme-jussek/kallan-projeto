@@ -93,7 +93,7 @@ https://github.com/guilherme-jussek/kallan-projeto
 
 O projeto está conectado ao Netlify por meio do repositório GitHub, permitindo a atualização do site a partir das alterações publicadas no branch principal.
 
-Conclusão
+## Conclusão
 
 Nesta primeira etapa, conseguimos montar a estrutura do site e fazer as principais páginas funcionarem. Também trabalhamos com HTML5, formulários, áudio, vídeo, navegação entre as páginas e publicação do projeto.
 
