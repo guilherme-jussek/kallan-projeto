@@ -20,7 +20,7 @@ O contato com a organização foi realizado presencialmente pelo integrante Sand
 
 ### Comprovação do contato
 
-Como comprovação do contato presencial, foi adicionada à pasta `docs/` uma foto do integrante Sander em frente à unidade Kallan K44.
+Como complemento à comprovação do contato presencial com a unidade Kallan K44, foram adicionadas à pasta docs/ três fotos relacionadas à unidade, mostrando o interior da loja e a identificação da marca.
 
 ![Comprovação do contato presencial com a organização](docs/entrevista.jpg)
 
