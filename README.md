@@ -89,7 +89,7 @@ https://kallan-projeto.netlify.app/
 
 **Repositório GitHub:**
 
-https://github.com/guilherme-jussek/kallan-projeto
+[https://github.com/guilherme-jussek/kallan-projeto](https://guilherme-jussek.github.io/kallan-projeto/)
 
 O projeto está conectado ao Netlify por meio do repositório GitHub, permitindo a atualização do site a partir das alterações publicadas no branch principal.
 
