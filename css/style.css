@@ -1,0 +1,772 @@
+
+/* ========================================
+   KALLAN CALÇADOS
+   Identidade urbana e esportiva
+======================================== */
+
+:root {
+    --preto: #111113;
+    --grafite: #202024;
+    --grafite-claro: #2c2c32;
+    --cinza: #a5a5ad;
+    --cinza-claro: #e8e8e8;
+    --branco: #f7f7f7;
+    --vermelho: #ed1c35;
+    --fonte-titulo: "Archivo", sans-serif;
+    --fonte-texto: "Manrope", sans-serif;
+}
+
+/* BASE */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--branco);
+    color: var(--preto);
+    font-family: var(--fonte-texto);
+    line-height: 1.6;
+    overflow-wrap: break-word;
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--vermelho);
+    outline-offset: 4px;
+}
+
+::selection {
+    background: var(--vermelho);
+    color: white;
+}
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px 28px;
+    padding: 22px 6%;
+    background: var(--preto);
+    color: var(--branco);
+    border-bottom: 3px solid var(--vermelho);
+}
+
+header > p {
+    flex-shrink: 0;
+    margin: 0;
+    font-family: var(--fonte-titulo);
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+}
+
+header > p a,
+nav a,
+footer a {
+    transition: color 0.25s ease;
+}
+
+header > p a:hover,
+nav a:hover,
+footer a:hover {
+    color: var(--vermelho);
+}
+
+nav {
+    flex: 1 1 600px;
+    min-width: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px 0;
+    color: #dedee0;
+    font-size: 0.83rem;
+    font-weight: 700;
+}
+
+/* ========================================
+   CONTEÚDO GERAL
+======================================== */
+
+main {
+    overflow: hidden;
+}
+
+main > section {
+    position: relative;
+    padding: 76px 7%;
+}
+
+main h1,
+main h2,
+main h3 {
+    font-family: var(--fonte-titulo);
+    line-height: 1.12;
+    letter-spacing: -1.2px;
+    overflow-wrap: break-word;
+}
+
+main h1 {
+    max-width: 720px;
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: clamp(2.7rem, 6vw, 5.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+main h2 {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+main h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+main p {
+    max-width: 720px;
+}
+
+main section > p {
+    font-size: 1rem;
+}
+
+/* ========================================
+   BANNER PRINCIPAL
+======================================== */
+
+main > section:first-child {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+    grid-template-areas:
+        "titulo imagem"
+        "descricao imagem"
+        "botao imagem";
+    align-content: center;
+    align-items: center;
+    column-gap: 32px;
+    row-gap: 10px;
+    min-height: 620px;
+    padding: 52px 5%;
+    overflow: hidden;
+    isolation: isolate;
+    background: #e7e7e9;
+    color: var(--preto);
+}
+
+main > section:first-child::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0 auto 0 0;
+    width: 7px;
+    content: "";
+    background: var(--vermelho);
+}
+
+main > section:first-child::after {
+    position: absolute;
+    z-index: -1;
+    inset: -10%;
+    content: "";
+    pointer-events: none;
+    background: radial-gradient(
+        ellipse at 75% 50%,
+        rgba(100, 100, 108, 0.17) 0%,
+        rgba(100, 100, 108, 0.09) 30%,
+        rgba(237, 28, 53, 0.035) 48%,
+        transparent 68%
+    );
+    animation: luz-banner 8s ease-in-out infinite alternate;
+}
+
+@keyframes luz-banner {
+    0% {
+        transform: translate(-2%, 1%) scale(0.96);
+        opacity: 0.65;
+    }
+
+    100% {
+        transform: translate(2%, -1%) scale(1.06);
+        opacity: 1;
+    }
+}
+
+main > section:first-child > h1 {
+    grid-area: titulo;
+    align-self: end;
+    max-width: 540px;
+    margin: 0 0 12px;
+    font-size: clamp(2.8rem, 5vw, 5.2rem);
+    line-height: 0.98;
+}
+
+main > section:first-child > p:first-of-type {
+    grid-area: descricao;
+    align-self: start;
+    max-width: 430px;
+    margin: 0 0 12px;
+    color: #414146;
+    font-size: 1.05rem;
+}
+
+main > section:first-child > img {
+    grid-area: imagem;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    border: 0;
+    border-radius: 30px;
+    object-fit: contain;
+    object-position: center;
+    box-shadow:
+        0 24px 55px rgba(17, 17, 19, 0.2),
+        0 0 24px rgba(100, 100, 108, 0.12);
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.45s ease;
+}
+
+main > section:first-child > img:hover {
+    transform: scale(1.035);
+    box-shadow: 0 30px 65px rgba(17, 17, 19, 0.25);
+}
+
+main > section:first-child > p:last-child {
+    grid-area: botao;
+    align-self: start;
+    margin: 0;
+}
+
+main > section:first-child h1::after {
+    display: block;
+    width: 85px;
+    height: 7px;
+    margin-top: 24px;
+    background: var(--vermelho);
+    content: "";
+}
+
+/* ========================================
+   ILUMINAÇÃO DAS SEÇÕES
+======================================== */
+
+main > section:not(:first-child):not(:nth-child(2))::before {
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    content: "";
+    pointer-events: none;
+    background: radial-gradient(
+        ellipse at 85% 45%,
+        rgba(100, 100, 108, 0.10) 0%,
+        rgba(100, 100, 108, 0.045) 35%,
+        transparent 68%
+    );
+    background-size: 140% 140%;
+    animation: luz-secoes 10s ease-in-out infinite alternate;
+}
+
+@keyframes luz-secoes {
+    0% {
+        background-position: 0% 50%;
+        opacity: 0.5;
+    }
+
+    100% {
+        background-position: 100% 50%;
+        opacity: 1;
+    }
+}
+
+main > section:not(:first-child) > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ========================================
+   BOTÕES E LINKS
+======================================== */
+
+main section > p > a,
+main article > a,
+main section > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 13px 22px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--vermelho);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+main section > p > a:hover,
+main article > a:hover,
+main section > a:hover {
+    background: #c9142a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(237, 28, 53, 0.18);
+}
+
+/* ========================================
+   CATEGORIAS
+   Feminino, Masculino, Infantil etc.
+   MANTIDO O DEGRADÊ ESCURO
+======================================== */
+
+main > section:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    background: linear-gradient(
+        135deg,
+        #202024 0%,
+        #2c2c32 50%,
+        #202024 100%
+    );
+    color: var(--branco);
+}
+
+main > section:nth-child(2) > h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+    color: var(--branco);
+}
+
+main > section:nth-child(2) > article {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 250px;
+    margin: 0;
+    padding: 28px;
+    overflow: hidden;
+    border: 1px solid #414147;
+    border-top: 4px solid var(--vermelho);
+    border-radius: 14px;
+    background: var(--grafite-claro);
+    color: var(--branco);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+main > section:nth-child(2) > article:hover {
+    transform: translateY(-5px);
+    background: #35353b;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.25);
+}
+
+main > section:nth-child(2) article h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: var(--branco);
+}
+
+main > section:nth-child(2) article p {
+    flex-grow: 1;
+    color: #d0d0d5;
+    font-size: 0.93rem;
+    overflow-wrap: anywhere;
+}
+
+main > section:nth-child(2) article > a {
+    align-self: flex-start;
+}
+
+/* ========================================
+   DEMAIS SEÇÕES
+   Degradês contínuos
+======================================== */
+
+main > section:nth-child(n + 3) {
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f5f5f7 50%,
+        #eeeeF1 100%
+    );
+    color: var(--preto);
+    border-top: 1px solid #dedee0;
+}
+
+main > section:nth-child(n + 3) p {
+    color: #45454a;
+}
+
+/* Marcas */
+
+main > section:nth-child(3) {
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8f8f9 50%,
+        #eeeeF1 100%
+    );
+}
+
+/* Experiência Kallan */
+
+main > section:nth-child(4) {
+    background: linear-gradient(
+        180deg,
+        #eeeeF1 0%,
+        #f5f5f7 50%,
+        #ffffff 100%
+    );
+}
+
+/* Kallan Card */
+
+main > section:nth-child(5) {
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f5f5f7 50%,
+        #e8e8eb 100%
+    );
+}
+
+/* Encontre uma loja */
+
+main > section:nth-child(6) {
+    background: linear-gradient(
+        180deg,
+        #e8e8eb 0%,
+        #f0f0f2 50%,
+        #fafafa 100%
+    );
+}
+
+/* Conteúdo multimídia */
+
+main > section:nth-child(7) {
+    background: linear-gradient(
+        180deg,
+        #fafafa 0%,
+        #f2f2f4 50%,
+        #e8e8eb 100%
+    );
+}
+
+/* ========================================
+   CARTÕES EM OUTRAS PÁGINAS
+======================================== */
+
+main > section:not(:first-child) article {
+    border-radius: 14px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+main > section:not(:first-child) article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(17, 17, 19, 0.12);
+}
+
+/* ========================================
+   FORMULÁRIOS
+======================================== */
+
+form {
+    width: 100%;
+    max-width: 760px;
+    margin: 30px auto;
+    padding: 32px;
+    border: 1px solid #dedee0;
+    border-top: 5px solid var(--vermelho);
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 12px 35px rgba(17, 17, 19, 0.08);
+}
+
+label {
+    display: block;
+    margin: 18px 0 7px;
+    font-weight: 700;
+}
+
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 46px;
+    padding: 12px 14px;
+    border: 1px solid #c8c8cc;
+    border-radius: 8px;
+    background: white;
+    color: var(--preto);
+    font: inherit;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--vermelho);
+    outline: 2px solid rgba(237, 28, 53, 0.15);
+}
+
+button,
+input[type="submit"] {
+    width: auto;
+    max-width: 100%;
+    margin-top: 22px;
+    padding: 14px 24px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--vermelho);
+    color: white;
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #c9142a;
+}
+
+/* ========================================
+   ÁUDIO, VÍDEO E IMAGENS
+======================================== */
+
+audio,
+video {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin: 24px 0;
+}
+
+main img {
+    max-width: 100%;
+}
+
+main section img:not(:first-child) {
+    border-radius: 14px;
+}
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    padding: 54px 7% 24px;
+    background: var(--preto);
+    color: var(--branco);
+    border-top: 3px solid var(--vermelho);
+}
+
+footer h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+footer p {
+    color: #d0d0d3;
+    font-size: 0.9rem;
+}
+
+/* ========================================
+   TABLETS
+======================================== */
+
+@media (max-width: 1000px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    main > section:first-child {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        column-gap: 22px;
+        min-height: 480px;
+        padding: 42px 5%;
+    }
+
+    main > section:first-child h1 {
+        font-size: clamp(2.5rem, 5vw, 4.2rem);
+    }
+
+    main > section:nth-child(2) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* ========================================
+   CELULARES
+======================================== */
+
+@media (max-width: 650px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    header > p {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        gap: 8px 14px;
+    }
+
+    nav a {
+        font-size: 0.78rem;
+    }
+
+    main > section {
+        padding: 48px 6%;
+    }
+
+    main h1 {
+        font-size: clamp(2.4rem, 10vw, 4rem);
+    }
+
+    main > section:first-child {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "titulo"
+            "descricao"
+            "imagem"
+            "botao";
+        row-gap: 18px;
+        min-height: auto;
+        padding: 42px 6%;
+    }
+
+    main > section:first-child h1 {
+        font-size: clamp(2.7rem, 12vw, 4rem);
+    }
+
+    main > section:first-child > p:first-of-type {
+        margin-bottom: 0;
+    }
+
+    main > section:first-child > img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 20px;
+    }
+
+    main > section:first-child > p:last-child {
+        margin-top: 0;
+    }
+
+    main > section:nth-child(2) {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    main > section:nth-child(2) > h2 {
+        margin-bottom: 8px;
+    }
+
+    main > section:nth-child(2) > article {
+        min-height: 0;
+        padding: 24px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 40px 6% 22px;
+    }
+}
+
+/* ========================================
+   ACESSIBILIDADE
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+    }
+}

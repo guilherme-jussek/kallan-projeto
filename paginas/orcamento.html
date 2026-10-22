@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contato — Kallan Calçados.">
-    <title>Contato | Kallan</title>
+    <meta name="description" content="Orçamento — Kallan Calçados.">
+    <title>Orçamento | Kallan</title>
 </head>
 
 <body>
@@ -16,13 +16,13 @@
         <nav aria-label="Navegação principal">
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="paginas/feminino.html">Feminino</a></li>
-                <li><a href="paginas/masculino.html">Masculino</a></li>
-                <li><a href="paginas/infantil.html">Infantil</a></li>
-                <li><a href="paginas/tenis-esportivo.html">Tênis esportivo</a></li>
-                <li><a href="paginas/acessorios.html">Acessórios</a></li>
-                <li><a href="paginas/marcas.html">Marcas</a></li>
-                <li><a href="paginas/lojas.html">Lojas</a></li>
+                <li><a href="feminino.html">Feminino</a></li>
+                <li><a href="masculino.html">Masculino</a></li>
+                <li><a href="infantil.html">Infantil</a></li>
+                <li><a href="tenis-esportivo.html">Tênis esportivo</a></li>
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <li><a href="marcas.html">Marcas</a></li>
+                <li><a href="lojas.html">Lojas</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="orcamento.html">Orçamento</a></li>
             </ul>
@@ -32,24 +32,27 @@
     <main>
 
         <section>
-            <h1>Entre em contato</h1>
-            <p>Envie sua mensagem para a equipe da Kallan.</p>
+            <h1>Solicitação de orçamento</h1>
+            <p>
+                Preencha os dados para solicitar informações sobre
+                um produto, categoria ou atendimento.
+            </p>
         </section>
 
         <section>
-            <h2>Formulário de contato</h2>
+            <h2>Solicite informações</h2>
 
             <article>
-                <h3>Envie sua mensagem</h3>
+                <h3>Formulário de orçamento</h3>
 
                 <form
-                    name="contato"
+                    name="orcamento"
                     method="post"
                     data-netlify="true"
-                    action="/obrigado.html"
+                    action="obrigado.html"
                 >
 
-                    <input type="hidden" name="form-name" value="contato">
+                    <input type="hidden" name="form-name" value="orcamento">
 
                     <p>
                         <label for="nome">Nome completo:</label><br>
@@ -90,22 +93,22 @@
                     </p>
 
                     <p>
-                        <label for="assunto">Assunto:</label><br>
-                        <select id="assunto" name="assunto" required>
+                        <label for="categoria">Categoria de interesse:</label><br>
+                        <select id="categoria" name="categoria" required>
                             <option value="">Selecione</option>
-                            <option value="duvida">Dúvida</option>
-                            <option value="loja">Informação sobre lojas</option>
-                            <option value="produto">Informação sobre produto</option>
-                            <option value="kallan-card">Kallan Card</option>
-                            <option value="outro">Outro</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="infantil">Infantil</option>
+                            <option value="tenis-esportivo">Tênis esportivo</option>
+                            <option value="acessorios">Acessórios</option>
                         </select>
                     </p>
 
                     <p>
-                        <label for="mensagem">Mensagem:</label><br>
+                        <label for="descricao">Descreva o que você procura:</label><br>
                         <textarea
-                            id="mensagem"
-                            name="mensagem"
+                            id="descricao"
+                            name="descricao"
                             rows="6"
                             minlength="10"
                             required
@@ -113,7 +116,7 @@
                     </p>
 
                     <p>
-                        <button type="submit">Enviar mensagem</button>
+                        <button type="submit">Solicitar informações</button>
                     </p>
 
                 </form>
@@ -121,12 +124,14 @@
         </section>
 
         <section>
-            <h2>Atendimento</h2>
+            <h2>Observação</h2>
 
             <article>
-                <h3>Canais de atendimento</h3>
-                <p>E-mail: sac@kallan.com.br</p>
-                <p>WhatsApp: (11) 91036-7002</p>
+                <h3>Informações importantes</h3>
+                <p>
+                    Preços, disponibilidade e condições comerciais devem ser
+                    confirmados pelos canais oficiais da Kallan.
+                </p>
             </article>
         </section>
 
