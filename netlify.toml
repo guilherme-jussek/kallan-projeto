@@ -1,7 +1,8 @@
+
 [build]
   publish = "."
 
 [[redirects]]
   from = "/"
   to = "/paginas/index.html"
-  status = 200ss
+  status = 200
