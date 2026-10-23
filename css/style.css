@@ -1,4 +1,3 @@
-
 /* ========================================
    KALLAN CALÇADOS
    Identidade urbana e esportiva
@@ -60,9 +59,7 @@ select:focus-visible {
     color: white;
 }
 
-/* ========================================
-   CABEÇALHO
-======================================== */
+/* CABEÇALHO */
 
 header {
     position: relative;
@@ -124,9 +121,7 @@ nav a {
     font-weight: 700;
 }
 
-/* ========================================
-   CONTEÚDO GERAL
-======================================== */
+/* CONTEÚDO GERAL */
 
 main {
     overflow: hidden;
@@ -176,9 +171,7 @@ main section > p {
     font-size: 1rem;
 }
 
-/* ========================================
-   BANNER PRINCIPAL
-======================================== */
+/* BANNER PRINCIPAL */
 
 main > section:first-child {
     position: relative;
@@ -295,9 +288,7 @@ main > section:first-child h1::after {
     content: "";
 }
 
-/* ========================================
-   ILUMINAÇÃO DAS SEÇÕES
-======================================== */
+/* ILUMINAÇÃO DAS SEÇÕES */
 
 main > section:not(:first-child):not(:nth-child(2))::before {
     position: absolute;
@@ -332,9 +323,7 @@ main > section:not(:first-child) > * {
     z-index: 1;
 }
 
-/* ========================================
-   BOTÕES E LINKS
-======================================== */
+/* BOTÕES E LINKS */
 
 main section > p > a,
 main article > a,
@@ -371,7 +360,6 @@ main section > a:hover {
 /* ========================================
    CATEGORIAS
    Feminino, Masculino, Infantil etc.
-   MANTIDO O DEGRADÊ ESCURO
 ======================================== */
 
 main > section:nth-child(2) {
@@ -437,7 +425,6 @@ main > section:nth-child(2) article > a {
 
 /* ========================================
    DEMAIS SEÇÕES
-   Degradês contínuos
 ======================================== */
 
 main > section:nth-child(n + 3) {
@@ -769,4 +756,909 @@ footer p {
         animation: none !important;
         transition: none !important;
     }
+}
+
+/* ==========================================
+   KALLAN | PÁGINA DE CONTATO
+========================================== */
+
+/* ABERTURA */
+
+main > section.contato-destaque {
+    background: #171719;
+    color: #ffffff;
+    padding: 80px 8%;
+}
+
+.contato-introducao {
+    max-width: 850px;
+    margin: 0 auto 55px;
+}
+
+.contato-etiqueta {
+    color: #ed1c35;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.contato-introducao h1 {
+    color: #ffffff;
+    font-family: var(--fonte-titulo);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.contato-introducao h1 span {
+    color: #ed1c35;
+}
+
+.contato-descricao {
+    color: #ffffff;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 620px;
+}
+
+.contato-chamada {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 25px;
+    background: #29292e;
+    border: 1px solid #55555e;
+    border-left: 5px solid #ed1c35;
+    border-radius: 8px;
+}
+
+.contato-icone {
+    flex-shrink: 0;
+    color: #ffffff;
+    background: #c9152b;
+    padding: 15px;
+    font-weight: 800;
+    border-radius: 6px;
+}
+
+.contato-chamada h2 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.contato-chamada p {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* FORMULÁRIO */
+
+main > section.contato-formulario {
+    background: #f2f2f4;
+    color: #171719;
+    padding: 75px 8%;
+}
+
+.contato-formulario-titulo {
+    max-width: 850px;
+    margin: 0 auto 35px;
+}
+
+.contato-formulario-titulo .contato-etiqueta {
+    color: #b51227;
+}
+
+.contato-formulario-titulo h2 {
+    color: #171719;
+    font-family: var(--fonte-titulo);
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.contato-formulario-titulo > p:last-child {
+    color: #414149;
+    line-height: 1.7;
+}
+
+.contato-cartao {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #ffffff;
+    color: #171719;
+    border: 1px solid #c8c8ce;
+    border-top: 5px solid #ed1c35;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contato-cartao form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.contato-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.contato-campo label {
+    color: #202024;
+    font-weight: 800;
+}
+
+.contato-campo input,
+.contato-campo select,
+.contato-campo textarea {
+    width: 100%;
+    padding: 14px;
+    background: #ffffff;
+    color: #171719;
+    border: 1px solid #767680;
+    border-radius: 5px;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.contato-campo input::placeholder,
+.contato-campo textarea::placeholder {
+    color: #595963;
+    opacity: 1;
+}
+
+.contato-campo select option {
+    background: #ffffff;
+    color: #171719;
+}
+
+.contato-campo input:focus,
+.contato-campo select:focus,
+.contato-campo textarea:focus {
+    outline: 3px solid rgba(201, 21, 43, 0.22);
+    outline-offset: 1px;
+    border-color: #b51227;
+}
+
+.contato-campos-duplos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contato-botao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 17px 22px;
+    background: #c9152b;
+    color: #ffffff;
+    border: 2px solid #c9152b;
+    border-radius: 5px;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.contato-botao:hover {
+    background: #a80f23;
+    border-color: #a80f23;
+}
+
+.contato-botao:focus-visible {
+    outline: 3px solid #171719;
+    outline-offset: 4px;
+}
+
+.contato-botao span {
+    font-size: 1.4rem;
+}
+
+.contato-aviso {
+    color: #414149;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* CANAIS DE ATENDIMENTO */
+
+main > section.contato-atendimento {
+    background: #171719;
+    color: #ffffff;
+    padding: 75px 8%;
+}
+
+.contato-atendimento-titulo {
+    max-width: 1100px;
+    margin: 0 auto 35px;
+}
+
+.contato-atendimento-titulo .contato-etiqueta {
+    color: #ed1c35;
+}
+
+.contato-atendimento-titulo h2 {
+    color: #ffffff;
+    font-family: var(--fonte-titulo);
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    line-height: 1.25;
+}
+
+.contato-canais {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contato-canal {
+    background: #29292e;
+    color: #ffffff;
+    padding: 30px;
+    border: 1px solid #55555e;
+    border-radius: 8px;
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.contato-canal:hover {
+    border-color: #ed1c35;
+    transform: translateY(-3px);
+}
+
+.contato-canal-numero {
+    display: block;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.contato-canal h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.contato-canal p {
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.contato-canal a {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 1.7;
+    text-decoration: underline;
+    text-decoration-color: #ed1c35;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    overflow-wrap: anywhere;
+}
+
+.contato-canal a:hover {
+    color: #ff465b;
+}
+
+.contato-canal a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 5px;
+}
+
+/* GARANTIA DE CONTRASTE NAS ÁREAS ESCURAS */
+
+main > section.contato-destaque .contato-introducao h1,
+main > section.contato-destaque .contato-chamada h2,
+main > section.contato-destaque .contato-chamada p,
+main > section.contato-destaque .contato-descricao,
+main > section.contato-atendimento .contato-atendimento-titulo h2,
+main > section.contato-atendimento .contato-canal h3,
+main > section.contato-atendimento .contato-canal p,
+main > section.contato-atendimento .contato-canal-numero,
+main > section.contato-atendimento .contato-canal a {
+    color: #ffffff;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+    main > section.contato-destaque,
+    main > section.contato-formulario,
+    main > section.contato-atendimento {
+        padding: 45px 6%;
+    }
+
+    .contato-introducao {
+        margin-bottom: 35px;
+}
+
+
+    .contato-chamada {
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .contato-campos-duplos,
+    .contato-canais {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-cartao {
+        padding: 22px;
+    }
+
+    .contato-canal {
+        padding: 24px;
+    }
+}
+
+/* ACESSIBILIDADE: MENOS ANIMAÇÕES */
+
+@media (prefers-reduced-motion: reduce) {
+    .contato-botao,
+    .contato-canal {
+        transition: none;
+    }
+
+    .contato-canal:hover {
+        transform: none;
+    }
+}
+
+/* Aviso de privacidade do formulário de contato */
+
+main > section.contato-formulario .contato-cartao .contato-aviso {
+    color: #202024 !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   KALLAN | ACESSÓRIOS E FEMININO
+========================================== */
+
+/* ==========================================
+   PÁGINA ACESSÓRIOS
+========================================== */
+
+/* Destaque principal */
+
+main > section.acessorios-destaque {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 48px;
+    min-height: 450px;
+    padding: 60px 8%;
+    background: #f1f1f3;
+    color: #202024;
+}
+
+.acessorios-texto {
+    min-width: 0;
+}
+
+.acessorios-texto h1 {
+    margin: 0 0 24px;
+    color: #202024;
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.acessorios-texto h1::after {
+    display: block;
+    width: 70px;
+    height: 5px;
+    margin-top: 22px;
+    background: var(--vermelho);
+    content: "";
+}
+
+.acessorios-texto p {
+    margin: 0;
+    color: #45454a;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.acessorios-imagem {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.acessorios-imagem img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    margin: 0;
+    border-radius: 16px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.acessorios-imagem img:hover {
+    transform: scale(1.03);
+}
+
+/* Categorias de acessórios */
+
+main > section.categorias {
+    display: block;
+    padding: 60px 7%;
+    background: #ffffff;
+    color: #202024;
+}
+
+main > section.categorias > h2 {
+    margin: 0 0 16px;
+    color: #202024;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.2;
+}
+
+main > section.categorias > p {
+    margin: 0 0 35px;
+    color: #55555b;
+    line-height: 1.7;
+}
+
+main > section.categorias .acessorios-lista {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+main > section.categorias .acessorios-lista article {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e1e1e4;
+    border-bottom: 3px solid var(--vermelho);
+    border-radius: 12px;
+    background: #f7f7f8;
+    color: #202024;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main > section.categorias .acessorios-lista article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(17, 17, 19, 0.12);
+}
+
+main > section.categorias .acessorios-lista img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    margin: 0;
+    padding: 12px;
+    border-radius: 0;
+    background: #ffffff;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+main > section.categorias .acessorios-lista article:hover img {
+    transform: scale(1.03);
+}
+
+main > section.categorias .acessorios-lista h3 {
+    margin: 0;
+    padding: 20px 22px 8px;
+    color: #202024;
+    font-size: 1.35rem;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+}
+
+main > section.categorias .acessorios-lista article p {
+    margin: 0;
+    padding: 0 22px 24px;
+    color: #494950;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   PÁGINA FEMININO
+========================================== */
+
+/* Destaque principal */
+
+body.pagina-feminino main > section.feminino-destaque {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 48px;
+    min-height: 450px;
+    padding: 60px 8%;
+    background: #f7f5f0;
+    color: #202024;
+}
+
+body.pagina-feminino .feminino-texto {
+    min-width: 0;
+}
+
+body.pagina-feminino .feminino-texto h1 {
+    max-width: 100%;
+    margin: 0 0 24px;
+    color: #202024;
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -0.8px;
+    overflow-wrap: normal;
+}
+
+body.pagina-feminino .feminino-texto h1::after {
+    display: block;
+    width: 70px;
+    height: 5px;
+    margin-top: 22px;
+    background: var(--vermelho);
+    content: "";
+}
+
+body.pagina-feminino .feminino-texto p {
+    margin: 0;
+    color: #45454a;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+body.pagina-feminino .feminino-etiqueta {
+    margin: 0 0 16px;
+    color: #c8102e;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    line-height: 1.6;
+}
+
+body.pagina-feminino .feminino-imagem-principal {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+body.pagina-feminino .feminino-imagem-principal img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    margin: 0;
+    border-radius: 16px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+body.pagina-feminino .feminino-imagem-principal img:hover {
+    transform: scale(1.03);
+}
+
+/* Categorias femininas */
+
+body.pagina-feminino main > section.feminino-categorias {
+    display: block;
+    padding: 60px 7%;
+    background: #ffffff;
+    color: #202024;
+}
+
+body.pagina-feminino .feminino-categorias-intro {
+    margin: 0 0 35px;
+    padding: 0 0 24px;
+    border-bottom: 1px solid #dedee2;
+}
+
+body.pagina-feminino .feminino-categorias-intro h2 {
+    margin: 0 0 16px;
+    color: #202024;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.2;
+}
+
+body.pagina-feminino .feminino-categorias-intro > p:last-child {
+    margin: 0;
+    color: #55555b;
+    line-height: 1.7;
+}
+
+body.pagina-feminino .feminino-lista {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+body.pagina-feminino .feminino-card {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #e1e0dc;
+    border-bottom: 3px solid var(--vermelho);
+    border-radius: 12px;
+    background: #f7f5f0;
+    color: #202024;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.pagina-feminino .feminino-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(17, 17, 19, 0.12);
+}
+
+body.pagina-feminino .feminino-card img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    margin: 0;
+    padding: 12px;
+    border-radius: 0;
+    background: #ffffff;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+body.pagina-feminino .feminino-card:hover img {
+    transform: scale(1.03);
+}
+
+body.pagina-feminino .feminino-card-texto {
+    padding: 20px 22px 24px;
+}
+
+body.pagina-feminino .feminino-card-texto h3 {
+    margin: 0 0 10px;
+    color: #202024;
+    font-size: 1.3rem;
+    line-height: 1.35;
+    letter-spacing: -0.3px;
+}
+
+body.pagina-feminino .feminino-card-texto p {
+    margin: 0;
+    color: #494950;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+@media (max-width: 1000px) {
+    main > section.categorias .acessorios-lista,
+    body.pagina-feminino .feminino-lista {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    main > section.acessorios-destaque,
+    body.pagina-feminino main > section.feminino-destaque {
+        gap: 30px;
+        padding: 48px 6%;
+    }
+
+    .acessorios-imagem img,
+    body.pagina-feminino .feminino-imagem-principal img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 650px) {
+    main > section.acessorios-destaque,
+    body.pagina-feminino main > section.feminino-destaque {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        padding: 40px 6%;
+    }
+
+    .acessorios-texto h1,
+    body.pagina-feminino .feminino-texto h1 {
+        font-size: clamp(2.3rem, 10vw, 3.2rem);
+    }
+
+    .acessorios-imagem img,
+    body.pagina-feminino .feminino-imagem-principal img {
+        height: 260px;
+    }
+
+    main > section.categorias,
+    body.pagina-feminino main > section.feminino-categorias {
+        padding: 42px 6% 54px;
+    }
+
+    main > section.categorias .acessorios-lista,
+    body.pagina-feminino .feminino-lista {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    main > section.categorias .acessorios-lista img {
+        height: 260px;
+    }
+
+    body.pagina-feminino .feminino-card img {
+        height: 270px;
+    }
+}
+
+/* Respeita a preferência por menos animações */
+
+@media (prefers-reduced-motion: reduce) {
+    .acessorios-imagem img,
+    main > section.categorias .acessorios-lista img,
+    main > section.categorias .acessorios-lista article,
+    body.pagina-feminino .feminino-card,
+    body.pagina-feminino .feminino-card img,
+    body.pagina-feminino .feminino-imagem-principal img {
+        transition: none;
+    }
+
+    main > section.categorias .acessorios-lista article:hover,
+    body.pagina-feminino .feminino-card:hover {
+        transform: none;
+    }
+}
+
+
+/* Ajuste responsivo da página Contato */
+
+.contato-destaque {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    align-items: center;
+    gap: 40px;
+}
+
+.contato-introducao,
+.contato-chamada {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.contato-introducao h1,
+.contato-chamada h2 {
+    overflow-wrap: break-word;
+}
+
+.contato-chamada {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contato-chamada > div {
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .contato-destaque {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .contato-introducao h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .contato-chamada h2 {
+        font-size: clamp(1.3rem, 5vw, 1.8rem);
+    }
+}
+
+
+
+/* Correção dos títulos em telas menores */
+
+/* Acessórios */
+.acessorios-texto,
+.acessorios-texto h1 {
+    min-width: 0;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
+.acessorios-texto h1 {
+    font-size: clamp(2rem, 4vw, 4rem);
+    line-height: 1.15;
+    letter-spacing: normal;
+}
+
+/* Contato */
+.contato-introducao,
+.contato-introducao h1,
+.contato-chamada,
+.contato-chamada h2 {
+    min-width: 0;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
+.contato-introducao h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.15;
+    letter-spacing: normal;
+}
+
+.contato-chamada h2 {
+    font-size: clamp(1.3rem, 2.5vw, 2rem);
+    line-height: 1.3;
+}
+
+@media (max-width: 650px) {
+    .acessorios-texto h1,
+    .contato-introducao h1 {
+        font-size: 2.2rem;
+    }
+
+    .contato-chamada h2 {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Recupera a tipografia dos textos dos cards */
+
+main > section.categorias .acessorios-lista article p,
+body.pagina-feminino .feminino-card-texto p {
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.1px;
+    color: #45454a;
+}
+
+/* CORREÇÃO DAS IMAGENS PRINCIPAIS */
+
+/* Página Acessórios */
+body main > section.acessorios-destaque .acessorios-imagem {
+    overflow: visible;
+}
+
+body main > section.acessorios-destaque .acessorios-imagem img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+}
+
+/* Página Feminino */
+body.pagina-feminino main > section.feminino-destaque .feminino-imagem-principal {
+    overflow: visible;
+}
+
+body.pagina-feminino main > section.feminino-destaque .feminino-imagem-principal img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
 }
