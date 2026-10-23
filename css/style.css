@@ -1662,3 +1662,19 @@ body.pagina-feminino main > section.feminino-destaque .feminino-imagem-principal
     max-height: none;
     object-fit: contain;
 }
+
+/* IMAGENS DOS CARDS DE ACESSÓRIOS */
+main > section.categorias .acessorios-lista img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    padding: 0;
+}
+
+/* IMAGENS DOS CARDS DE FEMININO */
+body.pagina-feminino .feminino-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding: 0;
+}
