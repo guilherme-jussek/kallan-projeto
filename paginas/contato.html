@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -30,153 +31,152 @@
         </nav>
     </header>
 
-    
-<main>
+    <main>
 
-    <section class="contato-destaque">
-        <div class="contato-introducao">
-            <p class="contato-etiqueta">KALLAN · ATENDIMENTO</p>
-            <h1>Vamos conversar<span>.</span></h1>
-            <p class="contato-descricao">
-                Sua dúvida merece atenção. Estamos aqui para ajudar
-                com informações sobre produtos, lojas e nossos canais
-                de atendimento.
-            </p>
-        </div>
-
-        <div class="contato-chamada">
-            <span class="contato-icone">01</span>
-            <div>
-                <h2>Fale com nossa equipe</h2>
-                <p>Preencha o formulário e envie sua mensagem.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contato-formulario">
-        <div class="contato-formulario-titulo">
-            <p class="contato-etiqueta">ESTAMOS AQUI PARA AJUDAR</p>
-            <h2>Como podemos ajudar?</h2>
-            <p>Preencha os campos abaixo para entrar em contato.</p>
-        </div>
-
-        <article class="contato-cartao">
-            <form
-                name="contato"
-                method="post"
-                data-netlify="true"
-                action="obrigado.html"
-            >
-                <input type="hidden" name="form-name" value="contato">
-
-                <div class="contato-campo">
-                    <label for="nome">Nome completo</label>
-                    <input
-                        type="text"
-                        id="nome"
-                        name="nome"
-                        autocomplete="name"
-                        minlength="3"
-                        placeholder="Como podemos chamar você?"
-                        required
-                    >
-                </div>
-
-                <div class="contato-campos-duplos">
-                    <div class="contato-campo">
-                        <label for="email">E-mail</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            autocomplete="email"
-                            placeholder="seu@email.com"
-                            required
-                        >
-                    </div>
-
-                    <div class="contato-campo">
-                        <label for="telefone">Telefone</label>
-                        <input
-                            type="tel"
-                            id="telefone"
-                            name="telefone"
-                            inputmode="numeric"
-                            autocomplete="tel"
-                            placeholder="11999999999"
-                            pattern="[0-9]{10,11}"
-                            title="Digite 10 ou 11 números, sem espaços, parênteses ou hífen."
-                            required
-                        >
-                    </div>
-                </div>
-
-                <div class="contato-campo">
-                    <label for="assunto">Assunto</label>
-                    <select id="assunto" name="assunto" required>
-                        <option value="">Selecione o assunto</option>
-                        <option value="duvida">Dúvida</option>
-                        <option value="loja">Informação sobre lojas</option>
-                        <option value="produto">Informação sobre produto</option>
-                        <option value="kallan-card">Kallan Card</option>
-                        <option value="outro">Outro</option>
-                    </select>
-                </div>
-
-                <div class="contato-campo">
-                    <label for="mensagem">Sua mensagem</label>
-                    <textarea
-                        id="mensagem"
-                        name="mensagem"
-                        rows="6"
-                        minlength="10"
-                        placeholder="Conte como podemos ajudar..."
-                        required
-                    ></textarea>
-                </div>
-
-                <button class="contato-botao" type="submit">
-                    Enviar mensagem
-                    <span aria-hidden="true">&rarr;</span>
-                </button>
-
-                <p class="contato-aviso">
-                    Seus dados serão utilizados para responder à sua solicitação.
+        <section class="contato-destaque">
+            <div class="contato-introducao">
+                <p class="contato-etiqueta">KALLAN · ATENDIMENTO</p>
+                <h1>Vamos conversar<span>.</span></h1>
+                <p class="contato-descricao">
+                    Sua dúvida merece atenção. Estamos aqui para ajudar
+                    com informações sobre produtos, lojas e nossos canais
+                    de atendimento.
                 </p>
-            </form>
-        </article>
-    </section>
+            </div>
 
-    <section class="contato-atendimento">
-        <div class="contato-atendimento-titulo">
-            <p class="contato-etiqueta">CANAIS DE ATENDIMENTO</p>
-            <h2>Escolha como falar com a gente.</h2>
-        </div>
+            <div class="contato-chamada">
+                <span class="contato-icone">01</span>
+                <div>
+                    <h2>Fale com nossa equipe</h2>
+                    <p>Preencha o formulário e envie sua mensagem.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="contato-canais">
-            <article class="contato-canal">
-                <span class="contato-canal-numero">01 / E-MAIL</span>
-                <h3>Envie um e-mail</h3>
-                <p>Para dúvidas e solicitações, entre em contato com nossa equipe.</p>
-                <a href="mailto:sac@kallan.com.br">
-                    sac@kallan.com.br
-                    <span aria-hidden="true">&rarr;</span>
-                </a>
+        <section class="contato-formulario">
+            <div class="contato-formulario-titulo">
+                <p class="contato-etiqueta">ESTAMOS AQUI PARA AJUDAR</p>
+                <h2>Como podemos ajudar?</h2>
+                <p>Preencha os campos abaixo para entrar em contato.</p>
+            </div>
+
+            <article class="contato-cartao">
+                <form
+                    name="contato"
+                    method="POST"
+                    data-netlify="true"
+                    action="/paginas/obrigado.html"
+                >
+                    <input type="hidden" name="form-name" value="contato">
+
+                    <div class="contato-campo">
+                        <label for="nome">Nome completo</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            autocomplete="name"
+                            minlength="3"
+                            placeholder="Como podemos chamar você?"
+                            required
+                        >
+                    </div>
+
+                    <div class="contato-campos-duplos">
+                        <div class="contato-campo">
+                            <label for="email">E-mail</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                placeholder="seu@email.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="contato-campo">
+                            <label for="telefone">Telefone</label>
+                            <input
+                                type="tel"
+                                id="telefone"
+                                name="telefone"
+                                inputmode="numeric"
+                                autocomplete="tel"
+                                placeholder="11999999999"
+                                pattern="[0-9]{10,11}"
+                                title="Digite 10 ou 11 números, sem espaços, parênteses ou hífen."
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="contato-campo">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione o assunto</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="loja">Informação sobre lojas</option>
+                            <option value="produto">Informação sobre produto</option>
+                            <option value="kallan-card">Kallan Card</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="contato-campo">
+                        <label for="mensagem">Sua mensagem</label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="6"
+                            minlength="10"
+                            placeholder="Conte como podemos ajudar..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button class="contato-botao" type="submit">
+                        Enviar mensagem
+                        <span aria-hidden="true">&rarr;</span>
+                    </button>
+
+                    <p class="contato-aviso">
+                        Seus dados serão utilizados para responder à sua solicitação.
+                    </p>
+                </form>
             </article>
+        </section>
 
-            <article class="contato-canal">
-                <span class="contato-canal-numero">02 / WHATSAPP</span>
-                <h3>Fale pelo WhatsApp</h3>
-                <p>Utilize nosso canal para entrar em contato com a Kallan.</p>
-                <a href="https://wa.me/5511910367002" target="_blank" rel="noopener noreferrer">
-                    (11) 91036-7002
-                    <span aria-hidden="true">&rarr;</span>
-                </a>
-            </article>
-        </div>
-    </section>
+        <section class="contato-atendimento">
+            <div class="contato-atendimento-titulo">
+                <p class="contato-etiqueta">CANAIS DE ATENDIMENTO</p>
+                <h2>Escolha como falar com a gente.</h2>
+            </div>
 
-</main>
+            <div class="contato-canais">
+                <article class="contato-canal">
+                    <span class="contato-canal-numero">01 / E-MAIL</span>
+                    <h3>Envie um e-mail</h3>
+                    <p>Para dúvidas e solicitações, entre em contato com nossa equipe.</p>
+                    <a href="mailto:sac@kallan.com.br">
+                        sac@kallan.com.br
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </article>
+
+                <article class="contato-canal">
+                    <span class="contato-canal-numero">02 / WHATSAPP</span>
+                    <h3>Fale pelo WhatsApp</h3>
+                    <p>Utilize nosso canal para entrar em contato com a Kallan.</p>
+                    <a href="https://wa.me/5511910367002" target="_blank" rel="noopener noreferrer">
+                        (11) 91036-7002
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
         <section>
@@ -192,7 +192,7 @@
         <p>&copy; 2026 Kallan Calçados. Projeto acadêmico.</p>
     </footer>
 
-<script src="../js/script.js"></script>   
+    <script src="../js/script.js"></script>
 
 </body>
 </html>
