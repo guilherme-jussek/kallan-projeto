@@ -2824,3 +2824,13 @@ body:has(.obrigado-conteudo) .obrigado-botao:focus-visible {
         font-size: 15px;
     }
 }
+
+
+/* Corrige o fundo atrás do texto do banner de Marcas */
+
+body.pagina-marcas main > section.marcas-banner .marcas-banner-texto {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
