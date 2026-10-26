@@ -3,45 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Marcas — Kallan Calçados.">
+    <meta name="description" content="Conheça marcas de calçados e artigos esportivos disponíveis na Kallan.">
     <title>Marcas | Kallan</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+
+<body class="pagina-marcas">
+
     <header>
         <p><a href="index.html">Kallan Calçados</a></p>
-        <nav aria-label="Navegação principal">
-    <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="feminino.html">Feminino</a></li>
-        <li><a href="masculino.html">Masculino</a></li>
-        <li><a href="infantil.html">Infantil</a></li>
-        <li><a href="tenis-esportivo.html">Tênis esportivo</a></li>
-        <li><a href="acessorios.html">Acessórios</a></li>
-        <li><a href="marcas.html">Marcas</a></li>
-        <li><a href="lojas.html">Lojas</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="orcamento.html">Orçamento</a></li>
-    </ul>
-</nav>
-    </header>
-    <main>
-        <section>
-    <h1>Melhores marcas</h1>
-    <p>A Kallan apresenta uma seleção de marcas de calçados e acessórios em seu catálogo.</p>
 
-    <img src="../assets/img/marcas.jpg" alt="Variedade de calçados">
-</section>
-<section><h2>Seleção de marcas</h2><p>Os nomes e categorias de marcas deverão ser conferidos no catálogo atual e, para o trabalho acadêmico, priorizar as informações confirmadas com o representante da organização.</p></section>
-<section><h2>Por que apresentar as marcas?</h2><p>Uma página dedicada permite organizar a navegação por marca e facilita ao cliente encontrar produtos alinhados às suas preferências.</p></section>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="feminino.html">Feminino</a></li>
+                <li><a href="masculino.html">Masculino</a></li>
+                <li><a href="infantil.html">Infantil</a></li>
+                <li><a href="tenis-esportivo.html">Tênis esportivo</a></li>
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <li><a href="marcas.html">Marcas</a></li>
+                <li><a href="lojas.html">Lojas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="orcamento.html">Orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="marcas-conteudo">
+
+        <section class="marcas-banner">
+
+            <div class="marcas-banner-imagem">
+                <img
+                    src="../assets/img/banner-marcas.jpeg"
+                    alt="Interior de uma loja de calçados com diferentes modelos expostos"
+                >
+            </div>
+
+            <div class="marcas-banner-texto">
+                <p class="marcas-etiqueta">ESTILO EM CADA DETALHE</p>
+
+                <h1>Marcas que acompanham você</h1>
+
+                <p>
+                    Do dia a dia aos momentos de movimento,
+                    descubra marcas que unem estilo, conforto e personalidade.
+                </p>
+
+                <a href="#marcas-destaque" class="marcas-botao">
+                    Explorar marcas
+                </a>
+            </div>
+
+        </section>
+
+        <section class="marcas-selecao" id="marcas-destaque">
+
+            <div class="marcas-titulo">
+                <p class="marcas-etiqueta">NOSSA SELEÇÃO</p>
+
+                <h2>Encontre sua marca</h2>
+
+                <p>
+                    Conheça algumas das marcas em destaque no universo dos calçados.
+                </p>
+            </div>
+
+            <div class="marcas-grade">
+
+                <article class="marca-card marca-nike">
+                    <span class="marca-numero">01 / ESPORTE</span>
+
+                    <div class="marca-imagem">
+                        <img
+                            src="../assets/img/nike.jpeg"
+                            alt="Logotipo da Nike"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="marca-info">
+                        <h3>Nike</h3>
+                        <p>Movimento, desempenho e estilo esportivo.</p>
+                    </div>
+                </article>
+
+                <article class="marca-card marca-adidas">
+                    <span class="marca-numero">02 / ESPORTE</span>
+
+                    <div class="marca-imagem">
+                        <img
+                            src="../assets/img/adidas.jpeg"
+                            alt="Logotipo da Adidas"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="marca-info">
+                        <h3>Adidas</h3>
+                        <p>Design esportivo para diferentes momentos.</p>
+                    </div>
+                </article>
+
+                <article class="marca-card marca-puma">
+                    <span class="marca-numero">03 / ESPORTE</span>
+
+                    <div class="marca-imagem">
+                        <img
+                            src="../assets/img/puma.jpeg"
+                            alt="Logotipo da Puma"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="marca-info">
+                        <h3>Puma</h3>
+                        <p>Personalidade e atitude em cada passo.</p>
+                    </div>
+                </article>
+
+                <article class="marca-card marca-asics">
+                    <span class="marca-numero">04 / ESPORTE</span>
+
+                    <div class="marca-imagem">
+                        <img
+                            src="../assets/img/asics.jpeg"
+                            alt="Logotipo da ASICS"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="marca-info">
+                        <h3>ASICS</h3>
+                        <p>Conforto e movimento para uma rotina ativa.</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="marcas-observacao">
+                Consulte o catálogo da Kallan para verificar a disponibilidade
+                atual de produtos de cada marca.
+            </p>
+
+        </section>
+
+        <section class="marcas-final">
+
+            <div class="marcas-final-texto">
+                <p class="marcas-etiqueta">SEU PRÓXIMO PASSO</p>
+
+                <h2>Seu estilo começa na escolha.</h2>
+
+                <p>
+                    Explore nossas categorias e encontre calçados
+                    para diferentes estilos e ocasiões.
+                </p>
+
+                <a href="tenis-esportivo.html" class="marcas-botao">
+                    Conhecer tênis esportivos
+                </a>
+            </div>
+
+        </section>
+
     </main>
+
     <footer>
         <section>
             <h2>Fale com a Kallan</h2>
+
             <p>E-mail: sac@kallan.com.br</p>
+
             <p>WhatsApp: (11) 91036-7002</p>
-            <p>Atendimento: segunda a quinta, das 09h às 18h; sexta, das 08h às 17h, exceto feriados.</p>
+
+            <p>
+                Atendimento: segunda a quinta, das 09h às 18h;
+                sexta, das 08h às 17h, exceto feriados.
+            </p>
         </section>
+
         <p>&copy; 2026 Kallan Calçados. Projeto acadêmico.</p>
     </footer>
+
 </body>
 </html>

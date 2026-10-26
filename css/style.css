@@ -595,10 +595,6 @@ video {
     margin: 24px 0;
 }
 
-main img {
-    max-width: 100%;
-}
-
 main section img:not(:first-child) {
     border-radius: 14px;
 }
@@ -1088,7 +1084,6 @@ main > section.contato-atendimento .contato-canal a {
         margin-bottom: 35px;
 }
 
-
     .contato-chamada {
         align-items: flex-start;
         padding: 20px;
@@ -1129,7 +1124,6 @@ main > section.contato-formulario .contato-cartao .contato-aviso {
     font-weight: 500;
     line-height: 1.6;
 }
-
 
 /* ==========================================
    KALLAN | ACESSÓRIOS E FEMININO
@@ -1182,17 +1176,18 @@ main > section.acessorios-destaque {
 
 .acessorios-imagem {
     min-width: 0;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 16px;
 }
 
 .acessorios-imagem img {
     display: block;
     width: 100%;
-    height: 340px;
+    height: auto;
+    max-height: none;
     margin: 0;
     border-radius: 16px;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.4s ease;
 }
 
@@ -1252,12 +1247,12 @@ main > section.categorias .acessorios-lista article:hover {
 main > section.categorias .acessorios-lista img {
     display: block;
     width: 100%;
-    height: 260px;
+    height: 240px;
     margin: 0;
-    padding: 12px;
+    padding: 0;
     border-radius: 0;
     background: #ffffff;
-    object-fit: contain;
+    object-fit: cover;
     transition: transform 0.4s ease;
 }
 
@@ -1340,17 +1335,18 @@ body.pagina-feminino .feminino-etiqueta {
 
 body.pagina-feminino .feminino-imagem-principal {
     min-width: 0;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 16px;
 }
 
 body.pagina-feminino .feminino-imagem-principal img {
     display: block;
     width: 100%;
-    height: 340px;
+    height: auto;
+    max-height: none;
     margin: 0;
     border-radius: 16px;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.4s ease;
 }
 
@@ -1415,12 +1411,12 @@ body.pagina-feminino .feminino-card:hover {
 body.pagina-feminino .feminino-card img {
     display: block;
     width: 100%;
-    height: 280px;
+    height: 250px;
     margin: 0;
-    padding: 12px;
+    padding: 0;
     border-radius: 0;
     background: #ffffff;
-    object-fit: contain;
+    object-fit: cover;
     transition: transform 0.4s ease;
 }
 
@@ -1464,10 +1460,6 @@ body.pagina-feminino .feminino-card-texto p {
         padding: 48px 6%;
     }
 
-    .acessorios-imagem img,
-    body.pagina-feminino .feminino-imagem-principal img {
-        height: 300px;
-    }
 }
 
 @media (max-width: 650px) {
@@ -1481,11 +1473,6 @@ body.pagina-feminino .feminino-card-texto p {
     .acessorios-texto h1,
     body.pagina-feminino .feminino-texto h1 {
         font-size: clamp(2.3rem, 10vw, 3.2rem);
-    }
-
-    .acessorios-imagem img,
-    body.pagina-feminino .feminino-imagem-principal img {
-        height: 260px;
     }
 
     main > section.categorias,
@@ -1525,7 +1512,6 @@ body.pagina-feminino .feminino-card-texto p {
         transform: none;
     }
 }
-
 
 /* Ajuste responsivo da página Contato */
 
@@ -1571,8 +1557,6 @@ body.pagina-feminino .feminino-card-texto p {
         font-size: clamp(1.3rem, 5vw, 1.8rem);
     }
 }
-
-
 
 /* Correção dos títulos em telas menores */
 
@@ -1624,7 +1608,6 @@ body.pagina-feminino .feminino-card-texto p {
     }
 }
 
-
 /* Recupera a tipografia dos textos dos cards */
 
 main > section.categorias .acessorios-lista article p,
@@ -1637,44 +1620,1207 @@ body.pagina-feminino .feminino-card-texto p {
     color: #45454a;
 }
 
-/* CORREÇÃO DAS IMAGENS PRINCIPAIS */
+/* ================================
+   PÁGINA INFANTIL
+================================ */
 
-/* Página Acessórios */
-body main > section.acessorios-destaque .acessorios-imagem {
-    overflow: visible;
+body.pagina-infantil main > section.infantil-banner {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 48px;
+    min-height: 450px;
+    padding: 60px 8%;
+    background: #E8EFF7;
+    color: #40546B;
 }
 
-body main > section.acessorios-destaque .acessorios-imagem img {
+body.pagina-infantil .infantil-banner-texto {
+    min-width: 0;
+}
+
+body.pagina-infantil .infantil-banner-texto .infantil-destaque {
+    margin: 0 0 16px;
+    color: #D87579;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+}
+
+body.pagina-infantil .infantil-banner-texto h1 {
+    max-width: 100%;
+    margin: 0 0 24px;
+    color: #40546B;
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -0.8px;
+    overflow-wrap: normal;
+}
+
+body.pagina-infantil .infantil-banner-texto h1::after {
+    display: block;
+    width: 70px;
+    height: 5px;
+    margin-top: 22px;
+    background: #D87579;
+    content: "";
+}
+
+body.pagina-infantil .infantil-banner-texto > p:last-child {
+    margin: 0;
+    color: #596A7D;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+body.pagina-infantil .infantil-banner-imagem {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+body.pagina-infantil .infantil-banner-imagem img {
+    display: block;
     width: 100%;
     height: auto;
-    max-height: none;
+    margin: 0;
+    border-radius: 12px;
     object-fit: contain;
+    object-position: center;
+    transition: transform 0.4s ease;
 }
 
-/* Página Feminino */
-body.pagina-feminino main > section.feminino-destaque .feminino-imagem-principal {
-    overflow: visible;
+body.pagina-infantil .infantil-banner-imagem img:hover {
+    transform: scale(1.03);
 }
 
-body.pagina-feminino main > section.feminino-destaque .feminino-imagem-principal img {
+/* TÍTULO DAS CATEGORIAS */
+
+body.pagina-infantil main > section.infantil-categorias {
+    display: block;
+    padding: 60px 7%;
+    background: #FFFFFF;
+    color: #40546B;
+}
+
+body.pagina-infantil .infantil-titulo-secao {
+    margin: 0 0 35px;
+    padding: 0 0 24px;
+    border-bottom: 1px solid #E8E1D8;
+}
+
+body.pagina-infantil .infantil-titulo-secao .infantil-destaque {
+    margin: 0 0 12px;
+    color: #D87579;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+}
+
+body.pagina-infantil .infantil-titulo-secao h2 {
+    margin: 0 0 16px;
+    color: #40546B;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.2;
+}
+
+body.pagina-infantil .infantil-titulo-secao > p:last-child {
+    margin: 0;
+    color: #596A7D;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* CARDS DE CALÇADOS */
+
+body.pagina-infantil .infantil-lista {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+body.pagina-infantil .infantil-card {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #E8E1D8;
+    border-bottom: 3px solid #D87579;
+    border-radius: 10px;
+    background: #FFF9F0;
+    color: #40546B;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.pagina-infantil .infantil-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(64, 84, 107, 0.12);
+}
+
+body.pagina-infantil .infantil-card img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: #F3E9DB;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+body.pagina-infantil .infantil-card:hover img {
+    transform: scale(1.03);
+}
+
+body.pagina-infantil .infantil-card-texto {
+    padding: 20px 22px 24px;
+}
+
+body.pagina-infantil .infantil-card-texto h3 {
+    margin: 0 0 10px;
+    color: #40546B;
+    font-size: 1.3rem;
+    line-height: 1.35;
+    letter-spacing: -0.3px;
+}
+
+body.pagina-infantil .infantil-card-texto p {
+    margin: 0;
+    color: #596A7D;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.1px;
+}
+
+/* SEÇÃO FINAL */
+
+body.pagina-infantil main > section.infantil-informacoes {
+    display: block;
+    padding: 50px 8%;
+    background: #F3E9DB;
+    color: #40546B;
+    text-align: center;
+}
+
+body.pagina-infantil .infantil-informacoes > div {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+body.pagina-infantil .infantil-informacoes .infantil-destaque {
+    margin: 0 0 12px;
+    color: #C9666D;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+}
+
+body.pagina-infantil .infantil-informacoes h2 {
+    margin: 0 0 16px;
+    color: #40546B;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.2;
+}
+
+body.pagina-infantil .infantil-informacoes > div > p:last-child {
+    margin: 0;
+    color: #596A7D;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* TABLETS */
+
+@media (max-width: 1000px) {
+    body.pagina-infantil .infantil-lista {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    body.pagina-infantil main > section.infantil-banner {
+        gap: 30px;
+        padding: 48px 6%;
+    }
+
+    body.pagina-infantil .infantil-banner-texto h1 {
+        font-size: clamp(2.2rem, 4vw, 3.2rem);
+    }
+
+    body.pagina-infantil .infantil-banner-imagem img {
+        height: 300px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 650px) {
+    body.pagina-infantil main > section.infantil-banner {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        padding: 40px 6%;
+    }
+
+    body.pagina-infantil .infantil-banner-texto h1 {
+        font-size: clamp(2.3rem, 10vw, 3.2rem);
+    }
+
+    body.pagina-infantil .infantil-banner-imagem img {
+        height: 260px;
+    }
+
+    body.pagina-infantil main > section.infantil-categorias {
+        padding: 42px 6% 54px;
+    }
+
+    body.pagina-infantil .infantil-lista {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    body.pagina-infantil .infantil-card img {
+        height: 270px;
+    }
+
+    body.pagina-infantil main > section.infantil-informacoes {
+        padding: 40px 6%;
+    }
+}
+
+/* ACESSIBILIDADE */
+
+@media (prefers-reduced-motion: reduce) {
+    body.pagina-infantil .infantil-card,
+    body.pagina-infantil .infantil-card img,
+    body.pagina-infantil .infantil-banner-imagem img {
+        transition: none;
+    }
+
+    body.pagina-infantil .infantil-card:hover {
+        transform: none;
+    }
+}
+
+
+/* ==========================================
+   AJUSTE VISUAL DA PÁGINA ACESSÓRIOS
+========================================== */
+
+body main > section.acessorios-destaque {
+    background: #D8CEC3;
+    color: #514943;
+}
+
+body main > section.acessorios-destaque .acessorios-texto h1 {
+    color: #514943;
+}
+
+body main > section.acessorios-destaque .acessorios-texto p {
+    color: #625951;
+}
+
+body main > section.categorias {
+    background: #F3F0EC;
+}
+
+body main > section.categorias > h2 {
+    color: #514943;
+}
+
+body main > section.categorias > p {
+    color: #625951;
+}
+
+body main > section.categorias .acessorios-lista article {
+    background: #FFFFFF;
+    border-color: #DED7D0;
+    border-bottom: 3px solid var(--vermelho);
+}
+
+body main > section.categorias .acessorios-lista article h3 {
+    color: #514943;
+}
+
+
+
+/* ==========================================
+   PÁGINA LOJAS
+========================================== */
+
+body.pagina-lojas {
+    background: #F7F3EE;
+    color: #39312B;
+}
+
+/* BANNER E LOCALIZAÇÕES */
+
+.pagina-lojas .lojas-banner {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: stretch;
+    gap: 42px;
+    padding: 55px 7%;
+    background: #E7DCD0;
+}
+
+.pagina-lojas .lojas-banner-imagem {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.pagina-lojas .lojas-banner-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 440px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px;
+    transition: transform 0.5s ease;
+}
+
+.pagina-lojas .lojas-banner-imagem:hover img {
+    transform: scale(1.035);
+}
+
+.pagina-lojas .lojas-banner-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+
+.pagina-lojas .lojas-etiqueta {
+    margin-bottom: 10px;
+    color: var(--vermelho);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.pagina-lojas .lojas-banner-texto h1 {
+    margin-bottom: 12px;
+    color: #49372B;
+    font-size: 2.5rem;
+}
+
+.pagina-lojas .lojas-banner-texto > p:last-child {
+    margin-bottom: 25px;
+    color: #625247;
+    line-height: 1.7;
+}
+
+/* LISTA DAS UNIDADES */
+
+.pagina-lojas .lojas-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pagina-lojas .lojas-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px;
+    background: #FBF9F6;
+    border: 1px solid #D8C9BA;
+    border-left: 4px solid var(--vermelho);
+    border-radius: 9px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pagina-lojas .lojas-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 14px rgba(73, 55, 43, 0.10);
+}
+
+.pagina-lojas .lojas-numero {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: #E7DCD0;
+    color: #49372B;
+    border-radius: 50%;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.pagina-lojas .lojas-card-conteudo {
+    min-width: 0;
+}
+
+.pagina-lojas .lojas-card h2 {
+    margin-bottom: 7px;
+    color: #49372B;
+    font-size: 1.05rem;
+}
+
+.pagina-lojas .lojas-card p {
+    color: #625247;
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+/* BOTÕES */
+
+.pagina-lojas .lojas-botao {
+    display: inline-block;
+    padding: 13px 22px;
+    background: var(--vermelho);
+    color: #FFFFFF;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.pagina-lojas .lojas-botao:hover {
+    background: #A91F2B;
+    transform: translateY(-2px);
+}
+
+/* SEÇÃO PARA ENCONTRAR OUTRAS UNIDADES */
+
+.pagina-lojas .lojas-localizar {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+    gap: 40px;
+    margin: 55px 7%;
+    padding: 40px;
+    background: #EEE7DF;
+    border: 1px solid #DED1C4;
+    border-radius: 14px;
+}
+
+.pagina-lojas .lojas-localizar-imagem {
+    text-align: center;
+}
+
+.pagina-lojas .lojas-localizar-imagem img {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    max-height: 220px;
+    margin: 0 auto;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.pagina-lojas .lojas-localizar-imagem:hover img {
+    transform: scale(1.04);
+}
+
+.pagina-lojas .lojas-localizar-texto h2 {
+    margin-bottom: 14px;
+    color: #49372B;
+    font-size: 1.8rem;
+}
+
+.pagina-lojas .lojas-localizar-texto p {
+    margin-bottom: 22px;
+    color: #625247;
+    line-height: 1.8;
+}
+
+/* ANIMAÇÕES SUAVES */
+
+@media (prefers-reduced-motion: reduce) {
+    .pagina-lojas *,
+    .pagina-lojas *::before,
+    .pagina-lojas *::after {
+        transition: none !important;
+        animation: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+    .pagina-lojas .lojas-banner {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        padding: 40px 5%;
+    }
+
+    .pagina-lojas .lojas-banner-imagem img {
+        min-height: 400px;
+    }
+
+    .pagina-lojas .lojas-banner-texto h1 {
+        font-size: 2rem;
+    }
+
+    .pagina-lojas .lojas-card {
+        padding: 14px;
+        gap: 10px;
+    }
+
+    .pagina-lojas .lojas-localizar {
+        gap: 25px;
+        margin: 40px 5%;
+        padding: 30px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    .pagina-lojas .lojas-banner {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 30px 5%;
+    }
+
+    .pagina-lojas .lojas-banner-imagem img {
+        min-height: 0;
+        height: 250px;
+    }
+
+    .pagina-lojas .lojas-banner-texto h1 {
+        font-size: 2rem;
+    }
+
+    .pagina-lojas .lojas-card {
+        padding: 15px;
+    }
+
+    .pagina-lojas .lojas-localizar {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 30px 5%;
+        padding: 25px 20px;
+    }
+
+    .pagina-lojas .lojas-localizar-imagem img {
+        max-height: 180px;
+    }
+
+    .pagina-lojas .lojas-localizar-texto h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* DESTAQUE DOS TEXTOS DA PÁGINA LOJAS */
+
+/* Texto de apresentação */
+.pagina-lojas .lojas-banner-texto > p:last-child {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #514239;
+}
+
+/* Nomes das ruas e endereços */
+.pagina-lojas .lojas-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    color: #514239;
+}
+
+/* Títulos das localizações */
+.pagina-lojas .lojas-card h2 {
+    font-size: 1.12rem;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+
+
+
+/* ==========================================
+   PÁGINA MARCAS
+   Fundos, contraste e organização visual
+========================================== */
+
+/* Fundo geral */
+body.pagina-marcas {
+    background: #111111;
+    color: #F5F5F5;
+}
+
+/* Cabeçalho */
+body.pagina-marcas header {
+    background: #050505;
+    color: #FFFFFF;
+}
+
+body.pagina-marcas header a,
+body.pagina-marcas nav a {
+    color: #F0F0F0;
+}
+
+/* Conteúdo */
+body.pagina-marcas main,
+body.pagina-marcas main.marcas-conteudo {
+    background: #151515;
+    color: #F5F5F5;
+}
+
+/* Banner principal: preserva a posição original */
+body.pagina-marcas main > section.marcas-banner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 32px;
+    background: #080808;
+    color: #FFFFFF;
+}
+
+body.pagina-marcas .marcas-banner-texto {
+    background: #080808;
+    color: #FFFFFF;
+}
+
+body.pagina-marcas .marcas-banner-texto h1 {
+    color: #FFFFFF;
+}
+
+body.pagina-marcas .marcas-banner-texto p {
+    color: #D6D6D6;
+}
+
+body.pagina-marcas .marcas-banner-imagem {
+    min-width: 0;
+}
+
+body.pagina-marcas .marcas-banner-imagem img {
+    display: block;
     width: 100%;
     height: auto;
-    max-height: none;
+}
+
+/* Etiquetas */
+body.pagina-marcas .marcas-etiqueta {
+    color: #FF4545;
+}
+
+/* Seção de marcas */
+body.pagina-marcas main > section.marcas-selecao {
+    background: #181818;
+    color: #F5F5F5;
+    border-color: #333333;
+}
+
+body.pagina-marcas .marcas-titulo h2 {
+    color: #FFFFFF;
+}
+
+body.pagina-marcas .marcas-titulo > p:last-child {
+    color: #D0D0D0;
+}
+
+/* Grade: duas marcas por linha */
+body.pagina-marcas .marcas-grade {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* Cartões */
+body.pagina-marcas .marca-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #292929;
+    color: #FFFFFF;
+    border-color: #414141;
+    border-bottom-color: var(--vermelho);
+}
+
+/* Número da marca */
+body.pagina-marcas .marca-numero {
+    color: #D0D0D0;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Área das imagens */
+body.pagina-marcas .marca-imagem {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background: #292929;
+}
+
+body.pagina-marcas .marca-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Informações das marcas */
+body.pagina-marcas .marca-info {
+    padding: 20px;
+    background: #292929;
+    color: #FFFFFF;
+}
+
+body.pagina-marcas .marca-info h3 {
+    margin: 0 0 10px;
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+body.pagina-marcas .marca-info p {
+    margin: 0;
+    color: #D6D6D6;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Observação */
+body.pagina-marcas .marcas-observacao {
+    color: #C5C5C5;
+}
+
+/* Botões */
+body.pagina-marcas .marcas-botao {
+    background: var(--vermelho);
+    color: #FFFFFF;
+    border-color: var(--vermelho);
+}
+
+body.pagina-marcas .marcas-botao:hover {
+    background: #FFFFFF;
+    color: #111111;
+}
+
+/* Seção final */
+body.pagina-marcas main > section.marcas-final {
+    background: #080808;
+    color: #FFFFFF;
+    border-color: #333333;
+}
+
+body.pagina-marcas .marcas-final h2 {
+    color: #FFFFFF;
+}
+
+body.pagina-marcas .marcas-final-texto p:not(.marcas-etiqueta) {
+    color: #D6D6D6;
+}
+
+/* Rodapé */
+body.pagina-marcas footer {
+    background: #050505;
+    color: #F0F0F0;
+}
+
+body.pagina-marcas footer h2 {
+    color: #FFFFFF;
+}
+
+body.pagina-marcas footer p {
+    color: #D0D0D0;
+}
+
+/* Adaptação para telas menores */
+@media (max-width: 700px) {
+    body.pagina-marcas main > section.marcas-banner {
+        grid-template-columns: 1fr;
+    }
+
+    body.pagina-marcas .marcas-grade {
+        grid-template-columns: 1fr;
+    }
+
+    body.pagina-marcas .marca-imagem {
+        height: 240px;
+    }
+}
+
+
+/* MARCAS: corrigir imagens e textos */
+
+body.pagina-marcas .marcas-grade {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+
+/* Remove a etiqueta "01 / ESPORTE" */
+body.pagina-marcas .marca-numero {
+    display: none;
+}
+
+/* Área de destaque do logotipo */
+body.pagina-marcas .marca-imagem {
+    width: 100%;
+    height: 260px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+body.pagina-marcas .marca-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+    object-position: center;
 }
 
-/* IMAGENS DOS CARDS DE ACESSÓRIOS */
-main > section.categorias .acessorios-lista img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    padding: 0;
+/* Nome e descrição da marca */
+body.pagina-marcas .marca-info {
+    padding: 22px 24px 26px;
+    background: #292929;
+    text-align: left;
 }
 
-/* IMAGENS DOS CARDS DE FEMININO */
-body.pagina-feminino .feminino-card img {
+body.pagina-marcas .marca-info h3 {
+    margin: 0 0 12px;
+    color: #FFFFFF;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+body.pagina-marcas .marca-info p {
+    margin: 0;
+    color: #D6D6D6;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+    body.pagina-marcas .marcas-grade {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Título e descrição da seleção de marcas */
+body.pagina-marcas .marcas-titulo {
+    max-width: 850px;
+    margin: 0 auto 36px;
+    text-align: center;
+}
+
+body.pagina-marcas .marcas-titulo .marcas-etiqueta {
+    margin-bottom: 12px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+body.pagina-marcas .marcas-titulo h2 {
+    margin: 0 0 16px;
+    color: #FFFFFF;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+}
+
+body.pagina-marcas .marcas-titulo > p:last-child {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #D0D0D0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Botões: Explorar marcas e Conhecer tênis esportivos */
+body.pagina-marcas a.marcas-botao,
+body.pagina-marcas .marcas-botao a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 24px;
+    border: 1px solid #E52335;
+    border-radius: 4px;
+    background: #E52335;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+body.pagina-marcas a.marcas-botao:visited,
+body.pagina-marcas .marcas-botao a:visited {
+    color: #FFFFFF;
+}
+
+body.pagina-marcas a.marcas-botao:hover,
+body.pagina-marcas .marcas-botao a:hover {
+    background: #FFFFFF;
+    color: #111111;
+    border-color: #FFFFFF;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+    body.pagina-marcas .marcas-titulo {
+        margin-bottom: 26px;
+    }
+
+    body.pagina-marcas .marcas-titulo > p:last-child {
+        font-size: 15px;
+    }
+}
+
+
+/* Alinhamento da introdução da grade de marcas */
+body.pagina-marcas .marcas-selecao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.pagina-marcas .marcas-titulo {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: center;
+    align-self: center;
+}
+
+body.pagina-marcas .marcas-titulo .marcas-etiqueta {
+    display: block;
+    margin: 0 0 14px;
+    text-align: center;
+}
+
+body.pagina-marcas .marcas-titulo h2 {
+    width: 100%;
+    margin: 0 0 18px;
+    text-align: center;
+}
+
+body.pagina-marcas .marcas-titulo > p:last-child {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Grade alinhada com o título e a descrição */
+body.pagina-marcas .marcas-grade {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Em telas pequenas */
+@media (max-width: 700px) {
+    body.pagina-marcas .marcas-titulo {
+        margin-bottom: 28px;
+    }
+}
+
+
+body.pagina-marcas .marcas-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px;
     padding: 0;
+    text-align: center;
+}
+
+body.pagina-marcas .marcas-titulo .marcas-etiqueta {
+    display: block;
+    width: 100%;
+    margin: 0 0 14px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+body.pagina-marcas .marcas-titulo h2 {
+    width: 100%;
+    margin: 0 0 18px;
+    padding: 0;
+    text-align: center;
+}
+
+body.pagina-marcas .marcas-titulo > p:last-child {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* Efeito de zoom no banner da página Marcas */
+body.pagina-marcas .marcas-banner-imagem {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+body.pagina-marcas .marcas-banner-imagem img {
+    display: block;
+    transition: transform 0.4s ease;
+    border-radius: 12px;
+}
+
+body.pagina-marcas .marcas-banner-imagem img:hover {
+    transform: scale(1.05);
+}
+
+body.pagina-marcas .marcas-banner::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    left: -60%;
+    width: 75%;
+    z-index: -1;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(190, 20, 55, 0.12),
+        rgba(255, 35, 75, 0.38),
+        rgba(190, 20, 55, 0.12),
+        transparent
+    );
+
+    filter: blur(45px);
+    animation: brilho-vinho-movimento 9s linear infinite;
+}
+
+
+/* ========================================
+   PÁGINA OBRIGADO
+======================================== */
+
+body:has(.obrigado-conteudo) {
+    background-color: #F5F3F2;
+    color: #333333;
+}
+
+body:has(.obrigado-conteudo) .obrigado-conteudo {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    background-color: #F5F3F2;
+}
+
+body:has(.obrigado-conteudo) .obrigado-mensagem {
+    width: 100%;
+    max-width: 650px;
+    padding: 50px 35px;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #333333;
+    border: 1px solid #E5DEDF;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(50, 25, 30, 0.08);
+    box-sizing: border-box;
+}
+
+body:has(.obrigado-conteudo) .obrigado-icone {
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #E6F3E9;
+    color: #287A45;
+    font-size: 36px;
+}
+
+body:has(.obrigado-conteudo) .obrigado-etiqueta {
+    margin: 0 0 12px;
+    color: #762B40;
+    background: transparent;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+body:has(.obrigado-conteudo) .obrigado-mensagem h2 {
+    margin: 0 0 20px;
+    color: #292326;
+    background: transparent;
+    font-size: 34px;
+}
+
+body:has(.obrigado-conteudo) .obrigado-descricao {
+    max-width: 480px;
+    margin: 0 auto 30px;
+    color: #5B5557;
+    background: transparent;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+body:has(.obrigado-conteudo) .obrigado-botao {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #762B40;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #762B40;
+    border-radius: 6px;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+body:has(.obrigado-conteudo) .obrigado-botao:hover {
+    background-color: #5D1F31;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+body:has(.obrigado-conteudo) .obrigado-botao:focus-visible {
+    outline: 2px solid #762B40;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    body:has(.obrigado-conteudo) .obrigado-conteudo {
+        min-height: 60vh;
+        padding: 35px 16px;
+    }
+
+    body:has(.obrigado-conteudo) .obrigado-mensagem {
+        padding: 35px 20px;
+    }
+
+    body:has(.obrigado-conteudo) .obrigado-mensagem h2 {
+        font-size: 27px;
+    }
+
+    body:has(.obrigado-conteudo) .obrigado-descricao {
+        font-size: 15px;
+    }
 }

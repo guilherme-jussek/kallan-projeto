@@ -3,45 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nossas lojas — Kallan Calçados.">
+    <meta name="description" content="Encontre lojas Kallan e consulte os endereços das unidades.">
     <title>Nossas lojas | Kallan</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+
+<body class="pagina-lojas">
+
     <header>
         <p><a href="index.html">Kallan Calçados</a></p>
-        <nav aria-label="Navegação principal">
-    <ul>
-         <li><a href="index.html">Início</a></li>
-        <li><a href="feminino.html">Feminino</a></li>
-        <li><a href="masculino.html">Masculino</a></li>
-        <li><a href="infantil.html">Infantil</a></li>
-        <li><a href="tenis-esportivo.html">Tênis esportivo</a></li>
-        <li><a href="acessorios.html">Acessórios</a></li>
-        <li><a href="marcas.html">Marcas</a></li>
-        <li><a href="lojas.html">Lojas</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="orcamento.html">Orçamento</a></li>
-    </ul>
-</nav>
-    </header>
-    <main>
-        <section>
-    <h1>Nossas lojas</h1>
-    <p>Encontre a unidade Kallan mais próxima e consulte endereço e telefone antes da visita.</p>
 
-    <img src="../assets/img/loja.jpg" alt="Interior de uma loja de calçados">
-</section>
-<section><h2>Exemplos de unidades</h2><article><h3>São Paulo — Vila Formosa</h3><p>Av. Dr. Eduardo Cotching, 2099, Vila Formosa, São Paulo/SP.</p></article><article><h3>São Paulo — Santo Amaro</h3><p>Mais Shopping, R. Amador Bueno, 229, Santo Amaro, São Paulo/SP.</p></article><article><h3>Aracaju — Shopping Jardins</h3><p>Av. Ministro Geraldo Barreto Sobral, 215, Jardins, Aracaju/SE.</p></article></section>
-<section><h2>Consulte outras unidades</h2><p>Confira a lista atualizada de lojas no site oficial da Kallan.</p><a href="https://www.kallan.com.br/?page_id=1000" target="_blank" rel="noopener noreferrer">Abrir lista oficial de lojas</a></section>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="feminino.html">Feminino</a></li>
+                <li><a href="masculino.html">Masculino</a></li>
+                <li><a href="infantil.html">Infantil</a></li>
+                <li><a href="tenis-esportivo.html">Tênis esportivo</a></li>
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <li><a href="marcas.html">Marcas</a></li>
+                <li><a href="lojas.html">Lojas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="orcamento.html">Orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lojas-conteudo">
+
+        <section class="lojas-banner" id="unidades">
+
+            <div class="lojas-banner-imagem">
+                <img
+                    src="../assets/img/banner-loja.jpeg"
+                    alt="Interior de uma loja de calçados"
+                >
+            </div>
+
+            <div class="lojas-banner-conteudo">
+
+                <div class="lojas-banner-texto">
+                    <p class="lojas-etiqueta">KALLAN CALÇADOS</p>
+
+                    <h1>Nossas lojas</h1>
+
+                    <p>
+                        Encontre uma unidade e planeje sua próxima visita.
+                        Confira alguns dos nossos endereços.
+                    </p>
+                </div>
+
+                <div class="lojas-lista">
+
+                    <article class="lojas-card">
+                        <span class="lojas-numero">01</span>
+
+                        <div class="lojas-card-conteudo">
+                            <h2>São Paulo | Vila Formosa</h2>
+
+                            <p>
+                                Av. Dr. Eduardo Cotching, 2099,
+                                Vila Formosa, São Paulo/SP.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="lojas-card">
+                        <span class="lojas-numero">02</span>
+
+                        <div class="lojas-card-conteudo">
+                            <h2>São Paulo | Santo Amaro</h2>
+
+                            <p>
+                                Mais Shopping, R. Amador Bueno, 229,
+                                Santo Amaro, São Paulo/SP.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="lojas-card">
+                        <span class="lojas-numero">03</span>
+
+                        <div class="lojas-card-conteudo">
+                            <h2>Aracaju | Shopping Jardins</h2>
+
+                            <p>
+                                Av. Ministro Geraldo Barreto Sobral, 215,
+                                Jardins, Aracaju/SE.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="lojas-localizar">
+
+            <div class="lojas-localizar-imagem">
+                <img
+                    src="../assets/img/localizar.jpeg"
+                    alt="Ilustração para localizar uma loja"
+                >
+            </div>
+
+            <div class="lojas-localizar-texto">
+                <h2>Encontre outras unidades</h2>
+
+                <p>
+                    Quer conhecer outras lojas Kallan?
+                    Acesse a lista oficial para consultar mais endereços
+                    e verificar as informações atualizadas.
+                </p>
+
+                <a
+                    class="lojas-botao"
+                    href="https://www.kallan.com.br/?page_id=1000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Ver todas as lojas
+                </a>
+            </div>
+
+        </section>
+
     </main>
+
     <footer>
         <section>
             <h2>Fale com a Kallan</h2>
+
             <p>E-mail: sac@kallan.com.br</p>
+
             <p>WhatsApp: (11) 91036-7002</p>
-            <p>Atendimento: segunda a quinta, das 09h às 18h; sexta, das 08h às 17h, exceto feriados.</p>
+
+            <p>
+                Atendimento: segunda a quinta, das 09h às 18h;
+                sexta, das 08h às 17h, exceto feriados.
+            </p>
         </section>
+
         <p>&copy; 2026 Kallan Calçados. Projeto acadêmico.</p>
     </footer>
+
 </body>
 </html>
