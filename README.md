@@ -38,7 +38,7 @@ Foram implementados formulários com validação nativa do HTML5, recursos de á
 
 Os formulários de contato e orçamento utilizam o Netlify Forms para o recebimento das informações enviadas pelos usuários.
 
-### Desafios técnicos
+## Desafios técnicos
 
 Durante o desenvolvimento, tivemos alguns desafios, principalmente para organizar a navegação entre as páginas e fazer os caminhos dos arquivos funcionarem corretamente entre a pasta principal e a pasta `paginas`.
 
@@ -87,9 +87,7 @@ A página auxiliar `obrigado.html`, utilizada para a confirmação do envio dos 
 
 https://kallan-projeto.netlify.app/
 
-**Repositório GitHub:**
 
-[https://github.com/guilherme-jussek/kallan-projeto](https://guilherme-jussek.github.io/kallan-projeto/)
 
 O projeto está conectado ao Netlify por meio do repositório GitHub, permitindo a atualização do site a partir das alterações publicadas no branch principal.
 
@@ -97,4 +95,4 @@ O projeto está conectado ao Netlify por meio do repositório GitHub, permitindo
 
 Nesta primeira etapa, conseguimos montar a estrutura do site e fazer as principais páginas funcionarem. Também trabalhamos com HTML5, formulários, áudio, vídeo, navegação entre as páginas e publicação do projeto.
 
-Durante o desenvolvimento, tivemos alguns ajustes pelo caminho, principalmente com os formulários, os caminhos dos arquivos e a publicação do site. Depois dos testes e das correções, conseguimos deixar o projeto funcionando e pronto para a próxima etapa.
+Durante o desenvolvimento, tivemos alguns ajustes pelo caminho, principalmente com os formulários, os caminhos dos arquivos e a publicação do site. Depois dos testes e das correções, conseguimos deixar o projeto pronto para a próxima etapa.
