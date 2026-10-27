@@ -95,4 +95,4 @@ O projeto está conectado ao Netlify por meio do repositório GitHub, permitindo
 
 Nesta primeira etapa, conseguimos montar a estrutura do site e fazer as principais páginas funcionarem. Também trabalhamos com HTML5, formulários, áudio, vídeo, navegação entre as páginas e publicação do projeto.
 
-Durante o desenvolvimento, tivemos alguns ajustes pelo caminho, principalmente com os formulários, os caminhos dos arquivos e a publicação do site. Depois dos testes e das correções, conseguimos deixar o projeto funcionando e pronto para a próxima etapa.
+Durante o desenvolvimento, tivemos alguns ajustes pelo caminho, principalmente com os formulários, os caminhos dos arquivos e a publicação do site. Depois dos testes e das correções, conseguimos deixar o projeto pronto para a próxima etapa.
