@@ -2834,3 +2834,1395 @@ body.pagina-marcas main > section.marcas-banner .marcas-banner-texto {
     box-shadow: none;
 }
 
+
+
+/* ==========================================
+   PÁGINA ORÇAMENTO
+   Identidade visual baseada em Contato
+========================================== */
+
+body:has(.orcamento-conteudo) {
+    background: #F2F2F4;
+    color: #171719;
+}
+
+main.orcamento-conteudo {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #F2F2F4;
+}
+
+body:has(.orcamento-conteudo) .orcamento-conteudo > section {
+    position: relative;
+    display: block;
+    min-height: 0;
+    padding: 75px 8%;
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    isolation: auto;
+}
+
+body:has(.orcamento-conteudo) .orcamento-conteudo > section::before,
+body:has(.orcamento-conteudo) .orcamento-conteudo > section::after {
+    content: none;
+}
+
+/* Abertura escura */
+
+body:has(.orcamento-conteudo) .orcamento-conteudo > section.orcamento-destaque {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    align-items: center;
+    gap: 40px;
+    background: #171719;
+    color: #FFFFFF;
+}
+
+.orcamento-introducao,
+.orcamento-chamada {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.orcamento-etiqueta {
+    margin: 0 0 16px;
+    color: #ED1C35;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+.orcamento-introducao h1 {
+    max-width: 650px;
+    margin: 0 0 24px;
+    color: #FFFFFF;
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
+.orcamento-descricao {
+    max-width: 620px;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.orcamento-chamada {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 25px;
+    background: #29292E;
+    border: 1px solid #55555E;
+    border-left: 5px solid #ED1C35;
+    border-radius: 8px;
+}
+
+.orcamento-icone {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border-radius: 6px;
+    background: #C9152B;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.orcamento-chamada h2 {
+    margin: 0 0 10px;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.orcamento-chamada p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* Seção do formulário */
+
+body:has(.orcamento-conteudo) .orcamento-conteudo > section.orcamento-formulario {
+    background: #F2F2F4;
+    color: #171719;
+}
+
+.orcamento-formulario-titulo {
+    max-width: 850px;
+    margin: 0 auto 35px;
+}
+
+.orcamento-formulario-titulo .orcamento-etiqueta {
+    color: #B51227;
+}
+
+.orcamento-formulario-titulo h2 {
+    margin: 0 0 14px;
+    color: #171719;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+.orcamento-formulario-titulo > p:last-child {
+    margin: 0;
+    color: #414149;
+    line-height: 1.7;
+}
+
+/* Cartão branco */
+
+.orcamento-cartao {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #FFFFFF;
+    color: #171719;
+    border: 1px solid #C8C8CE;
+    border-top: 5px solid #ED1C35;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.orcamento-cartao h3 {
+    margin: 0 0 28px;
+    color: #171719;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    letter-spacing: normal;
+}
+
+/* Neutraliza o estilo global de form */
+
+.orcamento-cartao form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.orcamento-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 0;
+}
+
+.orcamento-campo label {
+    display: block;
+    margin: 0;
+    color: #202024;
+    font-weight: 800;
+}
+
+.orcamento-campo input,
+.orcamento-campo select,
+.orcamento-campo textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 48px;
+    margin: 0;
+    padding: 14px;
+    border: 1px solid #767680;
+    border-radius: 5px;
+    background: #FFFFFF;
+    color: #171719;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.orcamento-campo textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.orcamento-campo input::placeholder,
+.orcamento-campo textarea::placeholder {
+    color: #595963;
+    opacity: 1;
+}
+
+.orcamento-campo input:focus,
+.orcamento-campo select:focus,
+.orcamento-campo textarea:focus {
+    outline: 3px solid rgba(201, 21, 43, 0.22);
+    outline-offset: 1px;
+    border-color: #B51227;
+}
+
+/* Botão */
+
+.orcamento-cartao button.orcamento-botao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 54px;
+    margin: 0;
+    padding: 17px 22px;
+    border: 2px solid #C9152B;
+    border-radius: 5px;
+    background: #C9152B;
+    color: #FFFFFF;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.orcamento-cartao button.orcamento-botao:hover {
+    background: #A80F23;
+    border-color: #A80F23;
+}
+
+.orcamento-cartao .orcamento-botao span:last-child {
+    font-size: 1.4rem;
+}
+
+.orcamento-aviso {
+    margin: 0;
+    color: #202024;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+/* Seção final */
+
+body:has(.orcamento-conteudo) .orcamento-conteudo > section.orcamento-observacao {
+    background: #171719;
+    color: #FFFFFF;
+}
+
+.orcamento-observacao .orcamento-etiqueta {
+    color: #ED1C35;
+}
+
+.orcamento-observacao h2 {
+    max-width: 850px;
+    margin: 0 0 16px;
+    color: #FFFFFF;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+.orcamento-observacao > p:not(.orcamento-etiqueta) {
+    max-width: 700px;
+    margin: 0 0 24px;
+    color: #FFFFFF;
+    line-height: 1.8;
+}
+
+.orcamento-observacao > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 13px 22px;
+    border: 1px solid #ED1C35;
+    border-radius: 5px;
+    background: #ED1C35;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: background 0.2s ease;
+}
+
+.orcamento-observacao > a:hover {
+    background: #A80F23;
+    color: #FFFFFF;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    body:has(.orcamento-conteudo) .orcamento-conteudo > section {
+        padding: 45px 6%;
+    }
+
+    body:has(.orcamento-conteudo) .orcamento-conteudo > section.orcamento-destaque {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .orcamento-introducao h1 {
+        font-size: clamp(2.2rem, 8vw, 3.2rem);
+    }
+
+    .orcamento-chamada {
+        padding: 20px;
+    }
+
+    .orcamento-cartao {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    .orcamento-chamada {
+        flex-direction: column;
+    }
+
+    .orcamento-cartao {
+        padding: 18px;
+    }
+
+    .orcamento-introducao h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* ==========================================
+   PÁGINA MASCULINO
+   Vinho forte e preto
+========================================== */
+
+/* Cores principais */
+
+body.pagina-masculino {
+    --masculino-vinho: #78001F;
+    --masculino-vinho-escuro: #30000D;
+    --masculino-preto: #111111;
+    --masculino-fundo: #F7F5F0;
+
+    background: var(--masculino-fundo);
+    color: var(--masculino-preto);
+}
+
+/* Cabeçalho */
+
+body.pagina-masculino header {
+    background: var(--masculino-preto);
+    color: #FFFFFF;
+}
+
+body.pagina-masculino header a,
+body.pagina-masculino nav a {
+    color: #FFFFFF;
+}
+
+/* Conteúdo principal */
+
+body.pagina-masculino main {
+    background: var(--masculino-fundo);
+    color: var(--masculino-preto);
+}
+
+/* ==========================================
+   BANNER
+   Proporções semelhantes ao destaque Feminino
+========================================== */
+
+body.pagina-masculino main > section.masculino-banner {
+    position: relative;
+    isolation: isolate;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--masculino-vinho-escuro);
+}
+
+body.pagina-masculino .masculino-banner img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+body.pagina-masculino .masculino-banner:hover img {
+    transform: scale(1.03);
+}
+
+/* Brilho escuro passando atrás do banner */
+
+body.pagina-masculino .masculino-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(
+        110deg,
+        transparent 15%,
+        rgba(120, 0, 31, 0.45) 40%,
+        rgba(48, 0, 13, 0.85) 50%,
+        rgba(120, 0, 31, 0.45) 60%,
+        transparent 85%
+    );
+    transform: translateX(-100%);
+    animation: masculino-brilho 8s linear infinite;
+}
+
+@keyframes masculino-brilho {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* ==========================================
+   SEÇÃO DE PRODUTOS
+========================================== */
+
+body.pagina-masculino main > section.masculino-produtos {
+    display: block;
+    padding: 60px 7%;
+    background: #FFFFFF;
+    color: var(--masculino-preto);
+    text-align: center;
+}
+
+body.pagina-masculino .masculino-produtos > h1 {
+    margin: 0 0 16px;
+    color: var(--masculino-preto);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.2;
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+body.pagina-masculino .masculino-produtos > h1::after {
+    display: block;
+    width: 70px;
+    height: 5px;
+    margin: 20px auto 0;
+    background: var(--masculino-vinho);
+    content: "";
+}
+
+body.pagina-masculino .masculino-produtos > p {
+    max-width: 720px;
+    margin: 20px auto 35px;
+    color: #45454A;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Grade dos produtos */
+
+body.pagina-masculino .masculino-lista {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+/* Cartões */
+
+body.pagina-masculino .masculino-card,
+body.pagina-masculino .masculino-lista .masculino-produto {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #E1E0DC;
+    border-bottom: 3px solid var(--masculino-vinho);
+    border-radius: 12px;
+    background: var(--masculino-fundo);
+    color: var(--masculino-preto);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.pagina-masculino .masculino-lista .masculino-produto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(17, 17, 19, 0.12);
+}
+
+/* Imagens dos cartões */
+
+body.pagina-masculino .masculino-lista .masculino-produto img {
+    display: block;
+    flex-shrink: 0;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: #FFFFFF;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+body.pagina-masculino .masculino-lista .masculino-produto:hover img {
+    transform: scale(1.03);
+}
+
+/* Textos dos cartões */
+
+body.pagina-masculino .masculino-lista .masculino-produto h2 {
+    margin: 0;
+    padding: 20px 22px 10px;
+    color: var(--masculino-preto);
+    font-size: 1.3rem;
+    line-height: 1.35;
+    letter-spacing: -0.3px;
+}
+
+body.pagina-masculino .masculino-lista .masculino-produto p {
+    margin: 0;
+    padding: 0 22px 24px;
+    color: #45454A;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.1px;
+}
+
+/* ==========================================
+   SEÇÃO DE CONTATO
+========================================== */
+
+body.pagina-masculino main > section.masculino-contato {
+    display: block;
+    padding: 50px 7%;
+    background: var(--masculino-vinho);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+body.pagina-masculino .masculino-contato h2 {
+    margin: 0 0 16px;
+    color: #FFFFFF;
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    line-height: 1.3;
+}
+
+body.pagina-masculino .masculino-contato p {
+    max-width: 700px;
+    margin: 0 auto 24px;
+    color: #FFFFFF;
+    line-height: 1.8;
+}
+
+body.pagina-masculino .masculino-contato a {
+    display: inline-block;
+    padding: 13px 25px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background: #FFFFFF;
+    color: var(--masculino-vinho-escuro);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+body.pagina-masculino .masculino-contato a:hover {
+    border-color: var(--masculino-preto);
+    background: var(--masculino-preto);
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+body.pagina-masculino footer {
+    background: var(--masculino-preto);
+    color: #FFFFFF;
+}
+
+body.pagina-masculino footer h2,
+body.pagina-masculino footer p {
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+@media (max-width: 1000px) {
+    body.pagina-masculino .masculino-lista {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+}
+
+@media (max-width: 650px) {
+    body.pagina-masculino main > section.masculino-produtos {
+        padding: 42px 6% 54px;
+    }
+
+    body.pagina-masculino .masculino-lista {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    body.pagina-masculino .masculino-lista .masculino-produto img {
+        height: 270px;
+    }
+
+    body.pagina-masculino main > section.masculino-contato {
+        padding: 40px 6%;
+    }
+}
+
+/* Respeita a preferência por menos animações */
+
+@media (prefers-reduced-motion: reduce) {
+    body.pagina-masculino .masculino-banner img,
+    body.pagina-masculino .masculino-lista .masculino-produto,
+    body.pagina-masculino .masculino-lista .masculino-produto img,
+    body.pagina-masculino .masculino-contato a {
+        transition: none;
+    }
+
+    body.pagina-masculino .masculino-banner::before {
+        animation: none;
+    }
+
+    body.pagina-masculino .masculino-banner:hover img,
+    body.pagina-masculino .masculino-lista .masculino-produto:hover,
+    body.pagina-masculino .masculino-lista .masculino-produto:hover img {
+        transform: none;
+    }
+}
+
+
+/* ==========================================
+   DESTAQUE MASCULINO
+   Estrutura semelhante à página Feminino
+========================================== */
+
+body.pagina-masculino main > section.masculino-destaque {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 48px;
+    min-height: 450px;
+    padding: 60px 8%;
+    background: #F7F5F0;
+    color: #111111;
+}
+
+body.pagina-masculino .masculino-texto {
+    min-width: 0;
+}
+
+body.pagina-masculino .masculino-etiqueta {
+    margin: 0 0 16px;
+    color: #78001F;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    line-height: 1.6;
+}
+
+body.pagina-masculino .masculino-texto h1 {
+    max-width: 100%;
+    margin: 0 0 24px;
+    color: #111111;
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -0.8px;
+    overflow-wrap: normal;
+}
+
+body.pagina-masculino .masculino-texto h1::after {
+    display: block;
+    width: 70px;
+    height: 5px;
+    margin-top: 22px;
+    background: #78001F;
+    content: "";
+}
+
+body.pagina-masculino .masculino-texto > p:last-child {
+    margin: 0;
+    color: #45454A;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+body.pagina-masculino .masculino-imagem-principal {
+    min-width: 0;
+    overflow: visible;
+    border-radius: 16px;
+    background: transparent;
+}
+
+body.pagina-masculino .masculino-imagem-principal img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: none;
+    margin: 0;
+    border-radius: 16px;
+    object-fit: contain;
+    object-position: center;
+    transition: none;
+}
+
+
+
+body.pagina-masculino .masculino-imagem-principal img:hover {
+    transform: scale(1.01);
+}
+
+
+/* Brilho escuro dentro da área da imagem */
+
+body.pagina-masculino .masculino-imagem-principal {
+    position: relative;
+    isolation: isolate;
+}
+
+body.pagina-masculino .masculino-imagem-principal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(
+        110deg,
+        transparent 45%,
+        rgba(196, 201, 208, 0.04) 50%,
+        transparent 55%
+    );
+    transform: translateX(-100%);
+    animation: masculino-brilho-destaque 8s linear infinite;
+}
+
+@keyframes masculino-brilho-destaque {
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* Responsividade igual à estrutura Feminino */
+
+@media (max-width: 1000px) {
+    body.pagina-masculino main > section.masculino-destaque {
+        gap: 30px;
+        padding: 48px 6%;
+    }
+}
+
+@media (max-width: 650px) {
+    body.pagina-masculino main > section.masculino-destaque {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        padding: 40px 6%;
+    }
+
+    body.pagina-masculino .masculino-texto h1 {
+        font-size: clamp(2.3rem, 10vw, 3.2rem);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body.pagina-masculino .masculino-imagem-principal img {
+        transition: none;
+    }
+
+    body.pagina-masculino .masculino-imagem-principal::after {
+        animation: none;
+    }
+}
+
+
+
+/* ==========================================
+   MASCULINO: MESMA PALETA DA PÁGINA MARCAS
+========================================== */
+
+/* Fundo geral */
+body.pagina-masculino {
+    background: #111111;
+    color: #F5F5F5;
+}
+
+/* Cabeçalho */
+body.pagina-masculino header,
+body.pagina-masculino footer {
+    background: #050505;
+    color: #FFFFFF;
+}
+
+body.pagina-masculino header a,
+body.pagina-masculino nav a {
+    color: #F0F0F0;
+}
+
+body.pagina-masculino footer h2 {
+    color: #FFFFFF;
+}
+
+body.pagina-masculino footer p {
+    color: #D0D0D0;
+}
+
+/* Conteúdo principal */
+body.pagina-masculino main {
+    background: #151515;
+    color: #F5F5F5;
+}
+
+/* ==========================================
+   DESTAQUE: TEXTO E IMAGEM
+========================================== */
+
+body.pagina-masculino main > section.masculino-destaque {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 48px;
+    min-height: 450px;
+    padding: 60px 8%;
+    overflow: hidden;
+    background: #080808;
+    color: #FFFFFF;
+}
+
+
+@keyframes masculino-brilho-marcas {
+    from {
+        left: -60%;
+    }
+
+    to {
+        left: 120%;
+    }
+}
+
+/* Textos do destaque */
+body.pagina-masculino .masculino-texto {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+
+body.pagina-masculino .masculino-etiqueta {
+    color: #FF4545;
+}
+
+body.pagina-masculino .masculino-texto h1 {
+    color: #FFFFFF;
+}
+
+body.pagina-masculino .masculino-texto h1::after {
+    background: #E52335;
+}
+
+body.pagina-masculino .masculino-texto > p:last-child {
+    color: #D6D6D6;
+}
+
+/* Imagem do destaque: preserva tamanho e bordas */
+body.pagina-masculino .masculino-imagem-principal {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #080808;
+}
+
+body.pagina-masculino .masculino-imagem-principal img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 340px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+}
+
+body.pagina-masculino .masculino-imagem-principal img:hover {
+    transform: scale(1.05);
+}
+
+/* Remove o brilho antigo que aparecia sobre a imagem */
+body.pagina-masculino .masculino-imagem-principal::after {
+    content: none;
+}
+
+/* ==========================================
+   SEÇÃO DE PRODUTOS
+========================================== */
+
+body.pagina-masculino main > section.masculino-produtos {
+    background: #181818;
+    color: #F5F5F5;
+}
+
+body.pagina-masculino .masculino-produtos > h1 {
+    color: #FFFFFF;
+}
+
+body.pagina-masculino .masculino-produtos > h1::after {
+    background: #E52335;
+}
+
+body.pagina-masculino .masculino-produtos > p {
+    color: #D0D0D0;
+}
+
+/* Cartões */
+body.pagina-masculino .masculino-lista .masculino-produto {
+    background: #292929;
+    color: #FFFFFF;
+    border-color: #414141;
+    border-bottom-color: #E52335;
+}
+
+body.pagina-masculino .masculino-lista .masculino-produto h2 {
+    color: #FFFFFF;
+}
+
+body.pagina-masculino .masculino-lista .masculino-produto p {
+    color: #D6D6D6;
+}
+
+body.pagina-masculino .masculino-lista .masculino-produto:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================
+   SEÇÃO FINAL
+========================================== */
+
+body.pagina-masculino main > section.masculino-contato {
+    background: #080808;
+    color: #FFFFFF;
+    border-top: 1px solid #333333;
+}
+
+body.pagina-masculino .masculino-contato h2 {
+    color: #FFFFFF;
+}
+
+body.pagina-masculino .masculino-contato p {
+    color: #D6D6D6;
+}
+
+body.pagina-masculino .masculino-contato a {
+    background: #E52335;
+    color: #FFFFFF;
+    border-color: #E52335;
+}
+
+body.pagina-masculino .masculino-contato a:hover {
+    background: #FFFFFF;
+    color: #111111;
+    border-color: #FFFFFF;
+}
+
+/* Responsividade */
+@media (max-width: 1000px) {
+    body.pagina-masculino main > section.masculino-destaque {
+        gap: 30px;
+        padding: 48px 6%;
+    }
+}
+
+@media (max-width: 650px) {
+    body.pagina-masculino main > section.masculino-destaque {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        padding: 40px 6%;
+    }
+}
+
+/* Respeita a preferência por menos animações */
+@media (prefers-reduced-motion: reduce) {
+    body.pagina-masculino .masculino-destaque::before {
+        animation: none;
+    }
+
+    body.pagina-masculino .masculino-imagem-principal img {
+        transition: none;
+    }
+}
+
+
+
+/* ==========================================
+   MASCULINO: CORES DA PÁGINA MARCAS
+========================================== */
+
+/* Fundo geral */
+body.pagina-masculino {
+    background: #FFFFFF;
+    color: #111111;
+}
+
+/* Cabeçalho e rodapé continuam escuros */
+body.pagina-masculino header,
+body.pagina-masculino footer {
+    background: #050505;
+    color: #FFFFFF;
+}
+
+body.pagina-masculino header a,
+body.pagina-masculino nav a {
+    color: #F0F0F0;
+}
+
+body.pagina-masculino footer h2 {
+    color: #FFFFFF;
+}
+
+body.pagina-masculino footer p {
+    color: #D0D0D0;
+}
+
+/* Conteúdo principal */
+body.pagina-masculino main {
+    background: #FFFFFF;
+    color: #111111;
+}
+
+/* ==========================================
+   DESTAQUE: MANTÉM O FUNDO PRETO E O BRILHO
+========================================== */
+
+body.pagina-masculino main > section.masculino-destaque {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 48px;
+    min-height: 450px;
+    padding: 60px 8%;
+    overflow: hidden;
+    background: #080808;
+    color: #FFFFFF;
+}
+
+
+@keyframes masculino-brilho-marcas {
+    from {
+        left: -60%;
+    }
+
+    to {
+        left: 120%;
+    }
+}
+
+/* Textos do destaque */
+body.pagina-masculino .masculino-texto {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+
+body.pagina-masculino .masculino-etiqueta {
+    color: #FF4545;
+}
+
+body.pagina-masculino .masculino-texto h1 {
+    color: #FFFFFF;
+}
+
+body.pagina-masculino .masculino-texto h1::after {
+    background: #E52335;
+}
+
+body.pagina-masculino .masculino-texto > p:last-child {
+    color: #D6D6D6;
+}
+
+/* Imagem do destaque: sem alterar dimensões */
+body.pagina-masculino .masculino-imagem-principal {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #080808;
+}
+
+body.pagina-masculino .masculino-imagem-principal img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 340px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+}
+
+body.pagina-masculino .masculino-imagem-principal img:hover {
+    transform: scale(1.05);
+}
+
+body.pagina-masculino .masculino-imagem-principal::after {
+    content: none;
+}
+
+/* ==========================================
+   SEÇÃO DE PRODUTOS: FUNDO BRANCO
+========================================== */
+
+body.pagina-masculino main > section.masculino-produtos {
+    background: #FFFFFF;
+    color: #111111;
+}
+
+body.pagina-masculino .masculino-produtos > h1 {
+    color: #111111;
+}
+
+body.pagina-masculino .masculino-produtos > h1::after {
+    background: #E52335;
+}
+
+body.pagina-masculino .masculino-produtos > p {
+    color: #444444;
+}
+
+/* Cartões dos produtos */
+body.pagina-masculino .masculino-lista .masculino-produto {
+    background: #F5F5F5;
+    color: #111111;
+    border-color: #DDDDDD;
+    border-bottom-color: #E52335;
+}
+
+body.pagina-masculino .masculino-lista .masculino-produto h2 {
+    color: #111111;
+}
+
+body.pagina-masculino .masculino-lista .masculino-produto p {
+    color: #444444;
+}
+
+body.pagina-masculino .masculino-lista .masculino-produto:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================
+   SEÇÃO FINAL: FUNDO BRANCO
+========================================== */
+
+body.pagina-masculino main > section.masculino-contato {
+    background: #FFFFFF;
+    color: #111111;
+    border-top: 1px solid #DDDDDD;
+}
+
+body.pagina-masculino .masculino-contato h2 {
+    color: #111111;
+}
+
+body.pagina-masculino .masculino-contato p {
+    color: #444444;
+}
+
+body.pagina-masculino .masculino-contato a {
+    background: #E52335;
+    color: #FFFFFF;
+    border-color: #E52335;
+}
+
+body.pagina-masculino .masculino-contato a:hover {
+    background: #111111;
+    color: #FFFFFF;
+    border-color: #111111;
+}
+
+/* Responsividade */
+@media (max-width: 1000px) {
+    body.pagina-masculino main > section.masculino-destaque {
+        gap: 30px;
+        padding: 48px 6%;
+    }
+}
+
+@media (max-width: 650px) {
+    body.pagina-masculino main > section.masculino-destaque {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        padding: 40px 6%;
+    }
+}
+
+/* Respeita a preferência por menos animações */
+@media (prefers-reduced-motion: reduce) {
+    body.pagina-masculino .masculino-destaque::before {
+        animation: none;
+    }
+
+    body.pagina-masculino .masculino-imagem-principal img {
+        transition: none;
+    }
+}
+
+
+
+/* Brilho prateado passando atrás do conteúdo */
+body.pagina-masculino .masculino-destaque::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    left: -60%;
+    width: 75%;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(196, 201, 208, 0.12),
+        rgba(220, 225, 232, 0.38),
+        rgba(196, 201, 208, 0.12),
+        transparent
+    );
+    filter: blur(45px);
+    animation: masculino-brilho-marcas 9s linear infinite;
+}
+
+
+
+
+/* ==========================================
+   DETALHES GRAFITE E PRATA: PÁGINA MASCULINO
+========================================== */
+
+/* Etiqueta da coleção */
+body.pagina-masculino .masculino-etiqueta {
+    color: #737D8C;
+}
+
+/* Linha abaixo dos títulos */
+body.pagina-masculino .masculino-texto h1::after,
+body.pagina-masculino .masculino-produtos > h1::after {
+    background: #C4C9D0;
+}
+
+/* Borda inferior dos cartões */
+body.pagina-masculino .masculino-lista .masculino-produto {
+    border-bottom-color: #737D8C;
+}
+
+/* Botão da seção final */
+body.pagina-masculino .masculino-contato a {
+    background: #E52335;
+    border-color: #E52335;
+    color: #FFFFFF;
+}
+
+/* Efeito ao passar o mouse no botão */
+body.pagina-masculino .masculino-contato a:hover {
+    background: #202329;
+    border-color: #202329;
+    color: #FFFFFF;
+}
+
+
+
+/* Corrige o enquadramento do banner Masculino no computador */
+@media (min-width: 1001px) {
+    body.pagina-masculino .masculino-imagem-principal {
+        overflow: visible;
+    }
+
+    body.pagina-masculino .masculino-imagem-principal img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: none;
+        object-fit: contain;
+        object-position: center;
+        transform: none;
+    }
+
+    body.pagina-masculino .masculino-imagem-principal img:hover {
+        transform: none;
+    }
+}
+
+body.pagina-masculino .masculino-imagem-principal img {
+    transition: transform 0.4s ease;
+}
+
+body.pagina-masculino .masculino-imagem-principal img:hover {
+    transform: scale(1.03);
+}
+
+/* Banner masculino sem brilho animado */
+body.pagina-masculino .masculino-destaque::before {
+    content: none !important;
+    animation: none !important;
+}
+
+/* Brilho prateado suave ao redor da imagem */
+body.pagina-masculino .masculino-imagem-principal {
+    border: none;
+    border-radius: 12px;
+    box-shadow:
+        0 0 8px rgba(196, 201, 208, 0.35),
+        0 0 20px rgba(196, 201, 208, 0.18);
+}
+
+/* Hover vermelho do menu na página Masculino */
+body.pagina-masculino header a:hover {
+    color: #e60000 !important;
+}

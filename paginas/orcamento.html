@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Orçamento — Kallan Calçados.">
+    <meta name="description" content="Solicite informações sobre produtos e atendimento da Kallan Calçados.">
     <title>Orçamento | Kallan</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -31,20 +31,48 @@
         </nav>
     </header>
 
-    <main>
+    <main class="orcamento-conteudo">
 
-        <section>
-            <h1>Solicitação de orçamento</h1>
-            <p>
-                Preencha os dados para solicitar informações sobre
-                um produto, categoria ou atendimento.
-            </p>
+        <section class="orcamento-destaque">
+            <div class="orcamento-introducao">
+                <p class="orcamento-etiqueta">KALLAN CALÇADOS</p>
+
+                <h1>Vamos encontrar o que você procura?</h1>
+
+                <p class="orcamento-descricao">
+                    Envie sua solicitação para obter informações sobre
+                    produtos, categorias e atendimento.
+                </p>
+            </div>
+
+            <div class="orcamento-chamada">
+                <div class="orcamento-icone" aria-hidden="true">
+                    ?
+                </div>
+
+                <div>
+                    <h2>Como funciona?</h2>
+                    <p>
+                        Preencha o formulário com seus dados e conte
+                        um pouco sobre o produto ou atendimento desejado.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Solicite informações</h2>
+        <section class="orcamento-formulario">
+            <div class="orcamento-formulario-titulo">
+                <p class="orcamento-etiqueta">FALE COM A KALLAN</p>
 
-            <article>
+                <h2>Solicite informações</h2>
+
+                <p>
+                    Preencha todos os campos obrigatórios para enviar
+                    sua solicitação.
+                </p>
+            </div>
+
+            <div class="orcamento-cartao">
                 <h3>Formulário de orçamento</h3>
 
                 <form
@@ -56,8 +84,8 @@
 
                     <input type="hidden" name="form-name" value="orcamento">
 
-                    <p>
-                        <label for="nome">Nome completo:</label><br>
+                    <div class="orcamento-campo">
+                        <label for="nome">Nome completo:</label>
                         <input
                             type="text"
                             id="nome"
@@ -66,10 +94,10 @@
                             minlength="3"
                             required
                         >
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="email">E-mail:</label><br>
+                    <div class="orcamento-campo">
+                        <label for="email">E-mail:</label>
                         <input
                             type="email"
                             id="email"
@@ -77,10 +105,10 @@
                             autocomplete="email"
                             required
                         >
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="telefone">Telefone:</label><br>
+                    <div class="orcamento-campo">
+                        <label for="telefone">Telefone:</label>
                         <input
                             type="tel"
                             id="telefone"
@@ -92,49 +120,56 @@
                             title="Digite 10 ou 11 números, sem espaços, parênteses ou hífen."
                             required
                         >
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="categoria">Categoria de interesse:</label><br>
+                    <div class="orcamento-campo">
+                        <label for="categoria">Categoria de interesse:</label>
                         <select id="categoria" name="categoria" required>
-                            <option value="">Selecione</option>
+                            <option value="">Selecione uma categoria</option>
                             <option value="feminino">Feminino</option>
                             <option value="masculino">Masculino</option>
                             <option value="infantil">Infantil</option>
                             <option value="tenis-esportivo">Tênis esportivo</option>
                             <option value="acessorios">Acessórios</option>
                         </select>
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="descricao">Descreva o que você procura:</label><br>
+                    <div class="orcamento-campo">
+                        <label for="descricao">O que você procura?</label>
                         <textarea
                             id="descricao"
                             name="descricao"
                             rows="6"
                             minlength="10"
+                            placeholder="Descreva o produto ou a informação desejada."
                             required
                         ></textarea>
-                    </p>
+                    </div>
 
-                    <p>
-                        <button type="submit">Solicitar informações</button>
+                    <button class="orcamento-botao" type="submit">
+                        <span>Solicitar informações</span>
+                        <span aria-hidden="true">&rarr;</span>
+                    </button>
+
+                    <p class="orcamento-aviso">
+                        Preços, disponibilidade e condições comerciais
+                        devem ser confirmados pelos canais oficiais da Kallan.
                     </p>
 
                 </form>
-            </article>
+            </div>
         </section>
 
-        <section>
-            <h2>Observação</h2>
+        <section class="orcamento-observacao">
+            <p class="orcamento-etiqueta">ATENDIMENTO</p>
+            <h2>Precisa de outra informação?</h2>
 
-            <article>
-                <h3>Informações importantes</h3>
-                <p>
-                    Preços, disponibilidade e condições comerciais devem ser
-                    confirmados pelos canais oficiais da Kallan.
-                </p>
-            </article>
+            <p>
+                Se sua dúvida não estiver relacionada a um produto específico,
+                você também pode entrar em contato com nossa equipe.
+            </p>
+
+            <a href="contato.html">Ir para a página de contato</a>
         </section>
 
     </main>
