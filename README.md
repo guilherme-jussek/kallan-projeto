@@ -38,7 +38,7 @@ Foram implementados formulários com validação nativa do HTML5, recursos de á
 
 Os formulários de contato e orçamento utilizam o Netlify Forms para o recebimento das informações enviadas pelos usuários.
 
-### Desafios técnicos
+## Desafios técnicos
 
 Durante o desenvolvimento, tivemos alguns desafios, principalmente para organizar a navegação entre as páginas e fazer os caminhos dos arquivos funcionarem corretamente entre a pasta principal e a pasta `paginas`.
 
