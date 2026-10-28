@@ -75,10 +75,12 @@ Mesmo com esse apoio, seria necessário revisar o código gerado, verificar a se
 
 A utilização da IA pode facilitar algumas etapas do desenvolvimento, mas não elimina a necessidade de compreender, testar e revisar o resultado produzido.
 
+
 ## 5. Estrutura do projeto
 
 A estrutura principal do repositório está organizada da seguinte forma:
 
+```text
 kallan-projeto/
 ├── assets/
 │   ├── img/
@@ -108,6 +110,7 @@ kallan-projeto/
 │   ├── orcamento.html
 │   └── tenis-esportivo.html
 └── README.md
+```
 
 ## 6. Validação e testes
 
