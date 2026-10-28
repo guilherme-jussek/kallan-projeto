@@ -136,7 +136,6 @@ Para este projeto acadêmico, o grupo optou por continuar utilizando o endereço
 
 Essa decisão permite manter o site acessível pela internet sem a necessidade de contratar um domínio separado. O endereço atual atende à finalidade de apresentar e demonstrar o funcionamento do projeto durante a disciplina.
 
-## 8. Conclusão
 
 ## 8. Conclusão
 
