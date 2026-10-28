@@ -4226,3 +4226,688 @@ body.pagina-masculino .masculino-imagem-principal {
 body.pagina-masculino header a:hover {
     color: #e60000 !important;
 }
+
+
+
+/* ==========================================
+   PÁGINA TÊNIS ESPORTIVO
+   ========================================== */
+
+body.pagina-tenis-esportivo {
+    margin: 0;
+    background-color: #FFFFFF;
+    color: #202631;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CABEÇALHO */
+
+body.pagina-tenis-esportivo header {
+    background-color: #050505;
+    color: #FFFFFF;
+}
+
+body.pagina-tenis-esportivo header a,
+body.pagina-tenis-esportivo nav a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+body.pagina-tenis-esportivo header a:hover,
+body.pagina-tenis-esportivo nav a:hover {
+    color: #E60000;
+}
+
+/* DESTAQUE PRINCIPAL */
+
+body.pagina-tenis-esportivo .esportivo-destaque {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 48px;
+    min-height: 450px;
+    padding: 60px 8%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #202631, #303D52);
+    color: #FFFFFF;
+}
+
+body.pagina-tenis-esportivo .esportivo-texto {
+    min-width: 0;
+}
+
+body.pagina-tenis-esportivo .esportivo-etiqueta {
+    margin: 0 0 18px;
+    color: #75A1FF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+body.pagina-tenis-esportivo .esportivo-texto h1 {
+    margin: 0 0 22px;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+}
+
+body.pagina-tenis-esportivo .esportivo-texto > p:last-child {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+body.pagina-tenis-esportivo .esportivo-imagem-principal {
+    min-width: 0;
+}
+
+body.pagina-tenis-esportivo .esportivo-imagem-principal img {
+    display: block;
+    width: 100%;
+    max-height: 380px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* SEÇÃO DE PRODUTOS */
+
+body.pagina-tenis-esportivo .esportivo-produtos {
+    display: block;
+    width: 78%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 55px 0 60px;
+    text-align: center;
+}
+
+body.pagina-tenis-esportivo .esportivo-produtos > h2 {
+    margin: 0 0 16px;
+    color: #172033;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+body.pagina-tenis-esportivo .esportivo-produtos > p {
+    display: block;
+    width: 100%;
+    margin: 0 0 35px;
+    color: #414B5B;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* GRADE DOS CARDS */
+
+body.pagina-tenis-esportivo .esportivo-lista {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    align-items: stretch;
+}
+
+/* CARDS DE PRODUTOS */
+
+body.pagina-tenis-esportivo .esportivo-produto {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border: 1px solid #D5DAE2;
+    border-bottom: 4px solid #246BFD;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(20, 30, 45, 0.08);
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.pagina-tenis-esportivo .esportivo-produto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(20, 30, 45, 0.12);
+}
+
+body.pagina-tenis-esportivo .esportivo-produto img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+    background-color: #FFFFFF;
+}
+
+body.pagina-tenis-esportivo .esportivo-produto h3 {
+    margin: 22px 22px 12px;
+    color: #172033;
+    font-size: 23px;
+    line-height: 1.3;
+}
+
+body.pagina-tenis-esportivo .esportivo-produto p {
+    margin: 0 22px 22px;
+    color: #414B5B;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* CONTATO */
+
+body.pagina-tenis-esportivo .esportivo-contato {
+    margin: 0 auto 55px;
+    width: 78%;
+    max-width: 1100px;
+    padding: 35px 24px;
+    box-sizing: border-box;
+    background-color: #E8EEFA;
+    border: 1px solid #D2DDF2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+body.pagina-tenis-esportivo .esportivo-contato h2 {
+    margin-top: 0;
+    color: #172033;
+    font-size: 27px;
+}
+
+body.pagina-tenis-esportivo .esportivo-contato p {
+    color: #354155;
+    line-height: 1.8;
+}
+
+body.pagina-tenis-esportivo .esportivo-contato a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 13px 24px;
+    background-color: #2058C9;
+    color: #FFFFFF;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+body.pagina-tenis-esportivo .esportivo-contato a:hover {
+    background-color: #163F91;
+}
+
+
+/* MULTIMIDIA ESPORTIVA COMPACTA */
+
+body.pagina-tenis-esportivo .esportivo-multimidia {
+    padding: 45px 8%;
+    background-color: #F5F7F2;
+    border-top: 1px solid #E0E5DA;
+}
+
+body.pagina-tenis-esportivo .esportivo-multimidia > h2 {
+    max-width: 1100px;
+    margin: 0 auto 10px;
+    color: #283229;
+    font-size: 30px;
+}
+
+body.pagina-tenis-esportivo .esportivo-multimidia > p {
+    max-width: 1100px;
+    margin: 0 auto 25px;
+    color: #535B52;
+    line-height: 1.6;
+}
+
+body.pagina-tenis-esportivo .esportivo-multimidia-lista {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+    gap: 18px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+body.pagina-tenis-esportivo .esportivo-multimidia-lista article {
+    min-width: 0;
+    padding: 22px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDE3D7;
+    border-radius: 12px;
+    box-shadow: 0 5px 16px rgba(40, 50, 41, 0.07);
+}
+
+body.pagina-tenis-esportivo .esportivo-multimidia-lista h3 {
+    margin-top: 0;
+    color: #34452D;
+    font-size: 21px;
+}
+
+body.pagina-tenis-esportivo .esportivo-multimidia-lista p {
+    color: #535B52;
+    line-height: 1.6;
+}
+
+body.pagina-tenis-esportivo .esportivo-multimidia-lista audio {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin-top: 15px;
+}
+
+body.pagina-tenis-esportivo .esportivo-multimidia-lista video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 340px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: #202522;
+}
+
+@media (max-width: 650px) {
+    body.pagina-tenis-esportivo .esportivo-multimidia {
+        padding: 35px 6%;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-multimidia-lista {
+        grid-template-columns: 1fr;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-multimidia-lista article {
+        padding: 18px;
+    }
+}
+
+
+/* RODAPÉ */
+
+body.pagina-tenis-esportivo footer {
+    background-color: #050505;
+    color: #FFFFFF;
+}
+
+body.pagina-tenis-esportivo footer h2 {
+    color: #FFFFFF;
+}
+
+body.pagina-tenis-esportivo footer p {
+    color: #D0D0D0;
+    line-height: 1.7;
+}
+
+/* TABLETS */
+
+@media (max-width: 1000px) {
+    body.pagina-tenis-esportivo .esportivo-destaque {
+        gap: 30px;
+        padding: 45px 6%;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-produtos,
+    body.pagina-tenis-esportivo .esportivo-contato {
+        width: 86%;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-produto img {
+        height: 240px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 650px) {
+    body.pagina-tenis-esportivo .esportivo-destaque {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        min-height: auto;
+        padding: 35px 6%;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-texto h1 {
+        font-size: 34px;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-imagem-principal img {
+        max-height: 300px;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-produtos {
+        width: 88%;
+        padding: 40px 0;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-produtos > h2 {
+        font-size: 26px;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-lista {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-produto img {
+        height: 250px;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-produto h3 {
+        font-size: 21px;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-contato {
+        width: 88%;
+        margin-bottom: 40px;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-multimidia {
+        padding: 35px 6% 45px;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-multimidia-lista {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* ACESSIBILIDADE */
+
+@media (prefers-reduced-motion: reduce) {
+    body.pagina-tenis-esportivo .esportivo-produto,
+    body.pagina-tenis-esportivo .esportivo-contato a {
+        transition: none;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-produto:hover {
+        transform: none;
+    }
+}
+
+
+/* Corrigir somente o fundo da seção de produtos */
+body.pagina-tenis-esportivo .esportivo-produtos {
+    background: #FFFFFF !important;
+    color: #303846;
+}
+
+body.pagina-tenis-esportivo .esportivo-produtos > h2,
+body.pagina-tenis-esportivo .esportivo-produtos > p {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #303846 !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+}
+
+
+body.pagina-tenis-esportivo .esportivo-contato a {
+    background-color: #E52335 !important;
+    color: #FFFFFF !important;
+}
+
+body.pagina-tenis-esportivo .esportivo-contato a:hover {
+    background-color: #B91527 !important;
+}
+
+
+/* IDENTIDADE ESPORTIVA - GRAFITE E VERDE-LIMAO */
+
+body.pagina-tenis-esportivo {
+    background-color: #FFFFFF;
+    color: #303330;
+}
+
+/* Destaque principal */
+body.pagina-tenis-esportivo .esportivo-destaque {
+    background: linear-gradient(120deg, #202522, #39433B);
+    color: #FFFFFF;
+}
+
+body.pagina-tenis-esportivo .esportivo-etiqueta {
+    color: #C7F36B;
+    letter-spacing: 3px;
+}
+
+/* Titulo e descricao dos produtos */
+body.pagina-tenis-esportivo .esportivo-produtos {
+    background: #FFFFFF !important;
+}
+
+body.pagina-tenis-esportivo .esportivo-produtos > h2 {
+    color: #303330 !important;
+    border-bottom: 3px solid #B8E94E;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+body.pagina-tenis-esportivo .esportivo-produtos > p {
+    color: #505650 !important;
+}
+
+/* Cards dos tenis */
+body.pagina-tenis-esportivo .esportivo-produto {
+    background-color: #F5F7F3;
+    border: 1px solid #E0E5DC;
+    border-bottom: 4px solid #A9D936;
+    border-radius: 12px;
+    box-shadow: 0 5px 16px rgba(32, 37, 34, 0.09);
+}
+
+body.pagina-tenis-esportivo .esportivo-produto:hover {
+    border-bottom-color: #E52335;
+    box-shadow: 0 9px 22px rgba(32, 37, 34, 0.15);
+}
+
+body.pagina-tenis-esportivo .esportivo-produto img {
+    background-color: #FFFFFF;
+}
+
+body.pagina-tenis-esportivo .esportivo-produto h3 {
+    color: #303A2A;
+}
+
+body.pagina-tenis-esportivo .esportivo-produto p {
+    color: #505650;
+}
+
+/* Contato */
+body.pagina-tenis-esportivo .esportivo-contato {
+    background: linear-gradient(120deg, #EDF4E3, #F7F9F3);
+    border-left: 5px solid #A9D936;
+}
+
+body.pagina-tenis-esportivo .esportivo-contato h2 {
+    color: #303A2A;
+}
+
+body.pagina-tenis-esportivo .esportivo-contato p {
+    color: #505650;
+}
+
+/* Botao vermelho Kallan */
+body.pagina-tenis-esportivo .esportivo-contato a {
+    background-color: #E52335 !important;
+    color: #FFFFFF !important;
+}
+
+body.pagina-tenis-esportivo .esportivo-contato a:hover {
+    background-color: #B91527 !important;
+}
+
+/* Audio e video */
+body.pagina-tenis-esportivo .esportivo-multimidia {
+    background-color: #F0F3EE;
+}
+
+body.pagina-tenis-esportivo .esportivo-multimidia > h2,
+body.pagina-tenis-esportivo .esportivo-multimidia-lista h3 {
+    color: #303A2A;
+}
+
+body.pagina-tenis-esportivo .esportivo-multimidia > p,
+body.pagina-tenis-esportivo .esportivo-multimidia-lista p {
+    color: #505650;
+}
+
+body.pagina-tenis-esportivo .esportivo-multimidia-lista article {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E5DC;
+    border-radius: 12px;
+}
+
+
+
+/* Imagem principal do banner sem cortes */
+body.pagina-tenis-esportivo .esportivo-imagem-principal {
+    min-width: 0;
+    overflow: visible;
+}
+
+body.pagina-tenis-esportivo .esportivo-imagem-principal img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.pagina-tenis-esportivo .esportivo-imagem-principal img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.32);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body.pagina-tenis-esportivo .esportivo-imagem-principal img {
+        transition: none;
+    }
+
+    body.pagina-tenis-esportivo .esportivo-imagem-principal img:hover {
+        transform: none;
+    }
+}
+
+
+/* CARTAO DE AUDIO INSTITUCIONAL */
+
+body.pagina-tenis-esportivo .esportivo-audio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #DDE3D7;
+    border-radius: 14px;
+    padding: 26px;
+    box-shadow: 0 5px 16px rgba(40, 50, 41, 0.07);
+}
+
+body.pagina-tenis-esportivo .esportivo-audio-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    background: #D9F39A;
+    color: #34452D;
+    font-size: 30px;
+}
+
+body.pagina-tenis-esportivo .esportivo-audio-etiqueta {
+    margin: 0 0 8px;
+    color: #607A35;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+body.pagina-tenis-esportivo .esportivo-audio-card h3 {
+    margin: 0 0 12px;
+    color: #283229;
+    font-size: 23px;
+}
+
+body.pagina-tenis-esportivo .esportivo-audio-card > p:not(.esportivo-audio-etiqueta) {
+    margin: 0 0 20px;
+    color: #535B52;
+    line-height: 1.7;
+}
+
+body.pagina-tenis-esportivo .esportivo-audio-player {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #F3F5EF;
+}
+
+body.pagina-tenis-esportivo .esportivo-audio-player audio {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    body.pagina-tenis-esportivo .esportivo-audio-card {
+        padding: 20px;
+    }
+}
+
+
+/* TEXTO DESCRITIVO DO CARTAO DE AUDIO */
+
+body.pagina-tenis-esportivo .esportivo-audio-card > p:not(.esportivo-audio-etiqueta) {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+    color: #596257;
+}
+
+
+/* TEXTO DESCRITIVO DO CARTAO DE VIDEO */
+
+body.pagina-tenis-esportivo .esportivo-video-card > p:not(.esportivo-audio-etiqueta) {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+    color: #596257;
+}
+
+
+/* DESCRICAO DESTAQUE DA SECAO DE PRODUTOS */
+
+body.pagina-tenis-esportivo .esportivo-produtos > p {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+    color: #303846;
+    text-align: center;
+    max-width: 650px;
+    margin: 14px auto 32px;
+    padding: 0 16px;
+    border-left: 4px solid #A8D94D;
+    border-right: 4px solid #A8D94D;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
